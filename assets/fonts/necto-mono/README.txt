@@ -2,11 +2,10 @@ Necto Mono
 ==========
 
 Designer: Marco Condello / Round Robin Type
-Source: bundled because the okfn.org Django site already ships this cut as
-`static/fonts/nectomono-regular.otf`.
+License: SIL Open Font License 1.1 (see OFL.txt in this directory)
+Reserved Font Name: Necto Mono
 
-Necto Mono is listed as SIL OFL 1.1 in public catalogues (UNCUT.wtf / Collletttivo).
-Confirm the webfont licence covers your chapter domain before deploying.
-
-If you cannot use this file, switch the "Necto Mono" font family in `theme.json`
-to an OFL mono such as IBM Plex Mono and delete this directory.
+The font is self-hosted in this theme as `nectomono-regular.otf`.
+It is loaded with a local @font-face rule in `styles/fonts.css` and
+via `theme.json` (`file:./assets/fonts/necto-mono/nectomono-regular.otf`).
+It is never fetched from a CDN or Google Fonts.

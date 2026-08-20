@@ -42,8 +42,10 @@ Do not install a page builder. Layout lives in patterns; you change text, images
 
 ## Fonts
 
-- **HK Grotesk** — SIL OFL 1.1, bundled as WOFF2. See `assets/fonts/hk-grotesk/OFL.txt`.
-- **Necto Mono** — shipped because okfn.org already uses this cut for highlight headings. Confirm the webfont licence for your domain; see `assets/fonts/necto-mono/README.txt`.
+Both faces are **SIL OFL 1.1** and **self-hosted in the theme**. `styles/fonts.css` registers them with local `@font-face` URLs. Nothing is loaded from Google Fonts or any other remote host.
+
+- **HK Grotesk** — WOFF2 in `assets/fonts/hk-grotesk/` (`OFL.txt`)
+- **Necto Mono** — OTF in `assets/fonts/necto-mono/` (`OFL.txt`); used for highlight headings and citations
 
 ## What this theme does not do
 

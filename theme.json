@@ -110,36 +110,42 @@
 							"fontFamily": "HK Grotesk",
 							"fontStyle": "normal",
 							"fontWeight": "400",
+							"fontDisplay": "swap",
 							"src": [ "file:./assets/fonts/hk-grotesk/HKGrotesk-Regular.woff2" ]
 						},
 						{
 							"fontFamily": "HK Grotesk",
 							"fontStyle": "italic",
 							"fontWeight": "400",
+							"fontDisplay": "swap",
 							"src": [ "file:./assets/fonts/hk-grotesk/HKGrotesk-Italic.woff2" ]
 						},
 						{
 							"fontFamily": "HK Grotesk",
 							"fontStyle": "normal",
 							"fontWeight": "500",
+							"fontDisplay": "swap",
 							"src": [ "file:./assets/fonts/hk-grotesk/HKGrotesk-Medium.woff2" ]
 						},
 						{
 							"fontFamily": "HK Grotesk",
 							"fontStyle": "italic",
 							"fontWeight": "500",
+							"fontDisplay": "swap",
 							"src": [ "file:./assets/fonts/hk-grotesk/HKGrotesk-MediumItalic.woff2" ]
 						},
 						{
 							"fontFamily": "HK Grotesk",
 							"fontStyle": "normal",
 							"fontWeight": "700",
+							"fontDisplay": "swap",
 							"src": [ "file:./assets/fonts/hk-grotesk/HKGrotesk-Bold.woff2" ]
 						},
 						{
 							"fontFamily": "HK Grotesk",
 							"fontStyle": "italic",
 							"fontWeight": "700",
+							"fontDisplay": "swap",
 							"src": [ "file:./assets/fonts/hk-grotesk/HKGrotesk-BoldItalic.woff2" ]
 						}
 					]
@@ -153,6 +159,7 @@
 							"fontFamily": "Necto Mono",
 							"fontStyle": "normal",
 							"fontWeight": "400",
+							"fontDisplay": "swap",
 							"src": [ "file:./assets/fonts/necto-mono/nectomono-regular.otf" ]
 						}
 					]

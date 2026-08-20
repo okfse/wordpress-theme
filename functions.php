@@ -19,6 +19,7 @@ function okfn_chapter_setup() {
 
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'editor-styles' );
+	add_editor_style( 'styles/fonts.css' );
 	add_editor_style( 'styles/tokens.css' );
 	add_editor_style( 'styles/components.css' );
 
@@ -43,9 +44,16 @@ function okfn_chapter_enqueue_styles() {
 	$theme_version = wp_get_theme()->get( 'Version' );
 
 	wp_enqueue_style(
+		'okfn-chapter-fonts',
+		get_template_directory_uri() . '/styles/fonts.css',
+		array(),
+		$theme_version
+	);
+
+	wp_enqueue_style(
 		'okfn-chapter-tokens',
 		get_template_directory_uri() . '/styles/tokens.css',
-		array(),
+		array( 'okfn-chapter-fonts' ),
 		$theme_version
 	);
 
@@ -57,6 +65,19 @@ function okfn_chapter_enqueue_styles() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'okfn_chapter_enqueue_styles' );
+
+/**
+ * Drops the core Google Fonts collection so Site Editor cannot pull remote webfonts.
+ * HK Grotesk and Necto Mono are self-hosted under SIL OFL 1.1.
+ *
+ * @return void
+ */
+function okfn_chapter_disable_remote_font_collections() {
+	if ( function_exists( 'wp_unregister_font_collection' ) ) {
+		wp_unregister_font_collection( 'google-fonts' );
+	}
+}
+add_action( 'init', 'okfn_chapter_disable_remote_font_collections' );
 
 /**
  * Registers the OK Network pattern category.
