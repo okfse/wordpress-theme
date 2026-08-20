@@ -40,7 +40,7 @@ Logos: header uses `assets/logos/Landscape/SVG/OKSE-landscape-full-rgb.svg` unti
 | Key pages (Om, Engagera dig, Kontakt, Donera, English equivalents) | Rebuild with patterns. Do not try to restyle 2022 Bootstrap markup. |
 | Long-tail project pages | Convert to blocks; apply heading/button styles only. |
 | Menus | Recreate in the Site Editor. Block themes do not use `register_nav_menus()` locations. |
-| Theme Options (GA, Twitter, CTA) | Not ported. Add analytics via a plugin. CTA is the **Page closing** pattern. |
+| Theme Options (GA, Twitter, CTA) | Not ported. Analytics: [Umami Hobby + Integrate Umami](umami.md). CTA is the **Page closing** pattern. |
 
 ## After cutover
 
