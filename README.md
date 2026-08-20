@@ -61,13 +61,19 @@ Both faces are **SIL OFL 1.1** and **self-hosted in the theme**. `styles/fonts.c
 - **HK Grotesk** — WOFF2 in `assets/fonts/hk-grotesk/` (`OFL.txt`)
 - **Necto Mono** — OTF in `assets/fonts/necto-mono/` (`OFL.txt`); used for highlight headings and citations
 
+## Analytics (Umami)
+
+Not part of the theme. Use Umami Cloud Hobby and the **Integrate Umami** plugin on the live site. See [docs/umami.md](docs/umami.md). Do not enable it in wp-env.
+
 ## What this theme does not do
 
 - It does not convert classic PHP templates or `[latestposts]` shortcodes automatically. See `docs/migration.md`.
 - It does not add Polylang. okfn.se English pages stay as a separate `/en/` tree unless you add a multilingual plugin later.
-- It does not inject Google Analytics. Use a plugin or host snippet.
+- It does not inject analytics IDs. See [docs/umami.md](docs/umami.md).
 
 ## Licence
 
 Theme code: GPL-2.0-or-later.  
 Content you publish: typically CC BY 4.0, matching Network practice.
+
+To move this fork to the okfse GitHub org, see [docs/move-to-okfse.md](docs/move-to-okfse.md).
