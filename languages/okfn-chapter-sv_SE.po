@@ -1,0 +1,192 @@
+# Copyright (C) 2026 Open Knowledge Sweden
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: OK Network Chapter 3.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mattiasaxell/wordpress-theme\n"
+"POT-Creation-Date: 2026-08-20\n"
+"PO-Revision-Date: 2026-08-20\n"
+"Last-Translator: Open Knowledge Sweden\n"
+"Language-Team: Swedish\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "OK Network"
+msgstr "OK-nätverket"
+
+msgid "Chapter layouts ported from the Open Knowledge visual identity."
+msgstr "Kapitel-layouter utifrån Open Knowledge visuell identitet."
+
+msgid "Pill"
+msgstr "Piller"
+
+msgid "White fill"
+msgstr "Vit fyllning"
+
+msgid "Highlight (mono)"
+msgstr "Markering (mono)"
+
+msgid "Blue orb"
+msgstr "Blå orb"
+
+msgid "Green orb"
+msgstr "Grön orb"
+
+msgid "Purple orb"
+msgstr "Lila orb"
+
+msgid "Yellow orb"
+msgstr "Gul orb"
+
+msgid "A fair, free and <strong>open</strong> future."
+msgstr "En rättvis, fri och <strong>öppen</strong> framtid."
+
+msgid "We work for a more open digital society — where non-sensitive information is open, free to use, build on and share."
+msgstr "Vi arbetar för ett mer öppet digitalt samhälle — där icke-känslig information är öppen, fri att använda, bygga vidare på och dela."
+
+msgid "Our mission"
+msgstr "Vårt uppdrag"
+
+msgid "Who we are"
+msgstr "Vilka vi är"
+
+msgid "A local chapter of the Open Knowledge Network, working in the open for public good."
+msgstr "Ett lokalt kapitel i Open Knowledge-nätverket som arbetar öppet för allmännyttan."
+
+msgid "Open knowledge can be created and applied in many ways."
+msgstr "Öppen kunskap kan skapas och tillämpas på många sätt."
+
+msgid "How we work"
+msgstr "Så arbetar vi"
+
+msgid "A global network"
+msgstr "Ett globalt nätverk"
+
+msgid "Meetings, training, innovation, sharing and research: join us in opening knowledge for everyone."
+msgstr "Möten, utbildning, innovation, delning och forskning: gå med oss och öppna kunskap för alla."
+
+msgid "Get involved"
+msgstr "Engagera dig"
+
+msgid "Open expertise"
+msgstr "Öppen expertis"
+
+msgid "We help partners with research, policy and technical work on open data and public information."
+msgstr "Vi hjälper samarbetspartner med forskning, policy och tekniskt arbete kring öppna data och offentlig information."
+
+msgid "Contact us"
+msgstr "Kontakta oss"
+
+msgid "Open data"
+msgstr "Öppna data"
+
+msgid "Democracy, science, culture and markets all work better when information is open by default."
+msgstr "Demokrati, vetenskap, kultur och marknader fungerar bättre när information är öppen som standard."
+
+msgid "Why open data"
+msgstr "Varför öppna data"
+
+msgid "Read more"
+msgstr "Läs mer"
+
+msgid "Website"
+msgstr "Webbplats"
+
+msgid "Latest posts"
+msgstr "Senaste inläggen"
+
+msgid "No posts found."
+msgstr "Inga inlägg hittades."
+
+msgid "More posts"
+msgstr "Fler inlägg"
+
+msgid "Name"
+msgstr "Namn"
+
+msgid "Role"
+msgstr "Roll"
+
+msgid "Short biography. Replace this text, the photo, and the contact details in the Site Editor."
+msgstr "Kort biografi. Byt ut text, foto och kontaktuppgifter i webbplatsredigeraren."
+
+msgid "We believe open knowledge can empower everyone."
+msgstr "Vi tror att öppen kunskap kan stärka alla."
+
+msgid "Open Knowledge Network"
+msgstr "Open Knowledge-nätverket"
+
+msgid "Impact"
+msgstr "Genomslag"
+
+msgid "Years as a chapter"
+msgstr "År som kapitel"
+
+msgid "Projects and briefs"
+msgstr "Projekt och underlag"
+
+msgid "Global network"
+msgstr "Globalt nätverk"
+
+msgid "BY 4.0 by default"
+msgstr "BY 4.0 som standard"
+
+msgid "Don't miss<br>a thing"
+msgstr "Missa inte<br>någonting"
+
+msgid "Stay on top of what is happening in the open movement. We will never spam you."
+msgstr "Håll koll på vad som händer i den öppna rörelsen. Vi skickar aldrig skräppost."
+
+msgid "Subscribe"
+msgstr "Prenumerera"
+
+msgid "Support a fair, free and <strong>open</strong> future."
+msgstr "Stöd en rättvis, fri och <strong>öppen</strong> framtid."
+
+msgid "Donate now"
+msgstr "Donera nu"
+
+msgid "Open Knowledge Sweden is a non-profit organisation working for a fair, free and open future."
+msgstr "Open Knowledge Sweden är en ideell förening som arbetar för en rättvis, fri och öppen framtid."
+
+msgid "Privacy policy"
+msgstr "Integritetspolicy"
+
+msgid "Cookie policy"
+msgstr "Cookiepolicy"
+
+msgid "Code of conduct"
+msgstr "Uppförandekod"
+
+msgid "IP policy"
+msgstr "IP-policy"
+
+msgid "Statutes"
+msgstr "Stadgar"
+
+msgid "Donate"
+msgstr "Donera"
+
+msgid "Source code available under the MIT license."
+msgstr "Källkod tillgänglig under MIT-licens."
+
+msgid "Content on this site is licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>."
+msgstr "Innehåll på den här webbplatsen licensieras under en <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Erkännande 4.0 Internationell licens</a>."
+
+msgid "Page not found"
+msgstr "Sidan hittades inte"
+
+msgid "The page you are looking for does not exist or has been moved."
+msgstr "Sidan du söker finns inte eller har flyttats."
+
+msgid "Back home"
+msgstr "Till startsidan"
+
+msgid "No posts were found. Try a different search or browse the latest posts from the blog."
+msgstr "Inga inlägg hittades. Prova en annan sökning eller bläddra bland de senaste inläggen."
+
+msgid "Comments"
+msgstr "Kommentarer"

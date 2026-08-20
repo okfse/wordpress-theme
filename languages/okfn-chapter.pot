@@ -1,0 +1,188 @@
+# Copyright (C) 2026 Open Knowledge Sweden
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: OK Network Chapter 3.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mattiasaxell/wordpress-theme\n"
+"POT-Creation-Date: 2026-08-20\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+msgid "OK Network"
+msgstr ""
+
+msgid "Chapter layouts ported from the Open Knowledge visual identity."
+msgstr ""
+
+msgid "Pill"
+msgstr ""
+
+msgid "White fill"
+msgstr ""
+
+msgid "Highlight (mono)"
+msgstr ""
+
+msgid "Blue orb"
+msgstr ""
+
+msgid "Green orb"
+msgstr ""
+
+msgid "Purple orb"
+msgstr ""
+
+msgid "Yellow orb"
+msgstr ""
+
+msgid "A fair, free and <strong>open</strong> future."
+msgstr ""
+
+msgid "We work for a more open digital society — where non-sensitive information is open, free to use, build on and share."
+msgstr ""
+
+msgid "Our mission"
+msgstr ""
+
+msgid "Who we are"
+msgstr ""
+
+msgid "A local chapter of the Open Knowledge Network, working in the open for public good."
+msgstr ""
+
+msgid "Open knowledge can be created and applied in many ways."
+msgstr ""
+
+msgid "How we work"
+msgstr ""
+
+msgid "A global network"
+msgstr ""
+
+msgid "Meetings, training, innovation, sharing and research: join us in opening knowledge for everyone."
+msgstr ""
+
+msgid "Get involved"
+msgstr ""
+
+msgid "Open expertise"
+msgstr ""
+
+msgid "We help partners with research, policy and technical work on open data and public information."
+msgstr ""
+
+msgid "Contact us"
+msgstr ""
+
+msgid "Open data"
+msgstr ""
+
+msgid "Democracy, science, culture and markets all work better when information is open by default."
+msgstr ""
+
+msgid "Why open data"
+msgstr ""
+
+msgid "Read more"
+msgstr ""
+
+msgid "Website"
+msgstr ""
+
+msgid "Latest posts"
+msgstr ""
+
+msgid "No posts found."
+msgstr ""
+
+msgid "More posts"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Role"
+msgstr ""
+
+msgid "Short biography. Replace this text, the photo, and the contact details in the Site Editor."
+msgstr ""
+
+msgid "We believe open knowledge can empower everyone."
+msgstr ""
+
+msgid "Open Knowledge Network"
+msgstr ""
+
+msgid "Impact"
+msgstr ""
+
+msgid "Years as a chapter"
+msgstr ""
+
+msgid "Projects and briefs"
+msgstr ""
+
+msgid "Global network"
+msgstr ""
+
+msgid "BY 4.0 by default"
+msgstr ""
+
+msgid "Don't miss<br>a thing"
+msgstr ""
+
+msgid "Stay on top of what is happening in the open movement. We will never spam you."
+msgstr ""
+
+msgid "Subscribe"
+msgstr ""
+
+msgid "Support a fair, free and <strong>open</strong> future."
+msgstr ""
+
+msgid "Donate now"
+msgstr ""
+
+msgid "Open Knowledge Sweden is a non-profit organisation working for a fair, free and open future."
+msgstr ""
+
+msgid "Privacy policy"
+msgstr ""
+
+msgid "Cookie policy"
+msgstr ""
+
+msgid "Code of conduct"
+msgstr ""
+
+msgid "IP policy"
+msgstr ""
+
+msgid "Statutes"
+msgstr ""
+
+msgid "Donate"
+msgstr ""
+
+msgid "Source code available under the MIT license."
+msgstr ""
+
+msgid "Content on this site is licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>."
+msgstr ""
+
+msgid "Page not found"
+msgstr ""
+
+msgid "The page you are looking for does not exist or has been moved."
+msgstr ""
+
+msgid "Back home"
+msgstr ""
+
+msgid "No posts were found. Try a different search or browse the latest posts from the blog."
+msgstr ""
+
+msgid "Comments"
+msgstr ""

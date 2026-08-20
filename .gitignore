@@ -1,10 +1,9 @@
-# Node packages downloaded via "npm install"
 node_modules/
-
-# Misc files types
+vendor/
 *.DS_Store
 *.log
-
-# NetBeans project files
 nbproject/
 .netbeans.xml
+.wp-env.override.json
+.idea/
+*.mo

@@ -1,0 +1,173 @@
+/**
+ * Tokens and utilities that theme.json cannot express.
+ * Orb backgrounds, 12-col tighten helpers, skip-link, reduced motion.
+ */
+
+:root {
+	--okfn-orb-size: 31.25rem;
+	--okfn-orb-size-lg: 43.75rem;
+	--okfn-orb-blur: 8.4375rem;
+	--okfn-master: 84rem;
+	--okfn-radius-button: var(--wp--custom--radius--button, 1.25rem);
+	--okfn-radius-pill: var(--wp--custom--radius--pill, 2.1875rem);
+	--okfn-radius-submenu: var(--wp--custom--radius--submenu, 3.75rem);
+}
+
+.has-bg-circle,
+.is-style-orb-blue,
+.is-style-orb-green,
+.is-style-orb-purple,
+.is-style-orb-yellow {
+	position: relative;
+	isolation: isolate;
+}
+
+.has-bg-circle::before,
+.is-style-orb-blue::before,
+.is-style-orb-green::before,
+.is-style-orb-purple::before,
+.is-style-orb-yellow::before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	width: var(--okfn-orb-size);
+	height: var(--okfn-orb-size);
+	border-radius: 50%;
+	pointer-events: none;
+	background: color-mix(in srgb, var(--wp--preset--color--okfn-blue) 70%, transparent);
+	filter: blur(var(--okfn-orb-blur));
+	mix-blend-mode: darken;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -30%);
+}
+
+.is-style-orb-green::before,
+.has-bg-circle.orb-green::before {
+	background: color-mix(in srgb, var(--wp--preset--color--okfn-green) 80%, transparent);
+}
+
+.is-style-orb-purple::before,
+.has-bg-circle.orb-purple::before {
+	background: color-mix(in srgb, var(--wp--preset--color--okfn-purple) 80%, transparent);
+}
+
+.is-style-orb-yellow::before,
+.has-bg-circle.orb-yellow::before {
+	background: color-mix(in srgb, var(--wp--preset--color--okfn-yellow) 80%, transparent);
+}
+
+.has-bg-circle.orb-lg::before,
+.is-style-orb-blue.orb-lg::before {
+	width: var(--okfn-orb-size-lg);
+	height: var(--okfn-orb-size-lg);
+}
+
+.has-bg-circle > *,
+.is-style-orb-blue > *,
+.is-style-orb-green > *,
+.is-style-orb-purple > *,
+.is-style-orb-yellow > * {
+	position: relative;
+	z-index: 1;
+}
+
+.okfn-tighten {
+	max-width: 70rem;
+	margin-inline: auto;
+}
+
+.okfn-tighten-2 {
+	max-width: 56rem;
+	margin-inline: auto;
+}
+
+.okfn-tighten-3 {
+	max-width: 42rem;
+	margin-inline: auto;
+}
+
+.is-style-highlight {
+	font-family: var(--wp--preset--font-family--necto-mono) !important;
+	font-weight: 400 !important;
+}
+
+.is-style-pill .wp-block-button__link {
+	border: 2px solid currentColor;
+	border-radius: var(--okfn-radius-pill);
+	background: transparent;
+	color: var(--wp--preset--color--contrast);
+	padding: 1.5625rem 1.5rem;
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: 400;
+	line-height: 1;
+}
+
+.is-style-pill .wp-block-button__link:hover,
+.is-style-pill .wp-block-button__link:focus-visible {
+	background: var(--wp--preset--color--okfn-blue);
+	border-color: transparent;
+	color: var(--wp--preset--color--base);
+}
+
+.is-style-pill .wp-block-button__link:active {
+	background: var(--wp--preset--color--okfn-purple);
+	border-color: transparent;
+	color: var(--wp--preset--color--base);
+}
+
+.is-style-fill-white .wp-block-button__link {
+	background: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+}
+
+.is-style-fill-white .wp-block-button__link:hover,
+.is-style-fill-white .wp-block-button__link:focus-visible {
+	color: var(--wp--preset--color--okfn-purple);
+}
+
+.is-style-fill-white .wp-block-button__link:active {
+	background: var(--wp--preset--color--okfn-purple);
+	color: var(--wp--preset--color--base);
+}
+
+.link-arrow-curved {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 700;
+	color: var(--wp--preset--color--contrast);
+	text-decoration: none;
+}
+
+.link-arrow-curved::after {
+	content: "";
+	width: 1rem;
+	height: 0.8125rem;
+	background-color: currentColor;
+	mask: url("../assets/icons/arrow-curved.svg") no-repeat center / contain;
+	-webkit-mask: url("../assets/icons/arrow-curved.svg") no-repeat center / contain;
+}
+
+.link-arrow-curved:hover {
+	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.4));
+	color: var(--wp--preset--color--okfn-blue);
+}
+
+.link-arrow-curved:active {
+	color: var(--wp--preset--color--okfn-purple);
+	filter: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+	}
+}

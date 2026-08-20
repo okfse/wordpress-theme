@@ -4,27 +4,30 @@ on:
   push:
     branches:
       - master
+      - v3/okfn-chapter
   pull_request:
     branches:
       - master
 
 jobs:
   php:
-    name: Testing
+    name: PHP lint and theme.json
     runs-on: ubuntu-latest
     env:
-      PHP_VERSION: '7.4'
+      PHP_VERSION: '8.2'
 
     steps:
       - name: Checkout the project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Setup the PHP ${{ env.PHP_VERSION }} environment on ${{ runner.os }}
+      - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ env.PHP_VERSION }}
-          tools: phpcs, phpunit
-          extensions: imagick, mbstring
+          extensions: mbstring
 
-      - name: Searching for PHP syntax errors
+      - name: PHP syntax
         run: find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
+
+      - name: Validate theme.json
+        run: python3 -c "import json,sys; json.load(open('theme.json')); json.load(open('styles/chapter-green.json'))"
