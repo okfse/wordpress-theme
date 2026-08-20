@@ -1,8 +1,10 @@
-# Migrating okfn.se (and other classic OKFN-WP sites)
+# Migrating okfn.se
 
-The classic theme (`OKFN-WP` 2.0, folder names such as `wordpress-theme-2022-05-10`) is a Bootstrap 4 PHP theme. This block theme is a replacement, not an in-place upgrade.
+This **Sweden** branch (`sweden/okfn-chapter`) is the build for [okfn.se](https://okfn.se/). The generic Network theme stays on `v3/okfn-chapter`.
 
-Classic code is preserved in Git as tag `classic-2.0.0`.
+The classic theme (`OKFN-WP` 2.0, folder names such as `wordpress-theme-2022-05-10`) is a Bootstrap 4 PHP theme. This block theme is a replacement, not an in-place upgrade. Classic code is preserved as tag `classic-2.0.0`.
+
+Logos: header uses `assets/logos/Landscape/SVG/OKSE-landscape-full-rgb.svg` until a Site Logo is uploaded. Footer uses the black landscape SVG.
 
 ## Before cutover
 
@@ -25,7 +27,7 @@ Classic code is preserved in Git as tag `classic-2.0.0`.
 
 1. Deploy this repository as `wp-content/themes/okfn-chapter/` (do not reuse the dated classic folder name).
 2. Appearance → Themes → activate **OK Network Chapter**.
-3. Appearance → Editor → upload the chapter Site Logo (landscape, colour).
+3. Appearance → Editor → optional: upload Site Logo if you do not want the bundled Sweden landscape wordmark.
 4. Edit the Header Navigation: About, What we do, Get involved, Blog, Contact (Swedish slugs on okfn.se: `/om/`, `/oppnadata/`, `/engagera-dig/`, `/blog/`, `/kontakt/`).
 5. Edit Footer social URLs and legal links.
 

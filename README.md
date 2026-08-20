@@ -1,10 +1,18 @@
-# OK Network Chapter
+# OK Network Chapter — Sweden
 
-WordPress **7.0+** block theme for Open Knowledge Network chapters. It ports the [okfn.org](https://okfn.org/) visual identity (palette, HK Grotesk, pill buttons, colour orbs) into core Site Editor and block patterns. No Astra, Spectra, Elementor, or other page-builder plugin is required.
+WordPress **7.0+** block theme for [Open Knowledge Sweden](https://okfn.se/) (`okfn.se`). Fork of `v3/okfn-chapter` with the **OKSE** logo pack. Visual identity (palette, HK Grotesk, pill buttons, colour orbs) matches okfn.org. No Astra, Spectra, Elementor, or other page-builder plugin is required.
 
-Version **3.0.0** replaces the deprecated classic `OKFN-WP` 2.0 theme (Bootstrap 4, jQuery, mmenu, Grunt). The classic tree is tagged `classic-2.0.0`.
+Version **3.0.0** replaces the deprecated classic `OKFN-WP` 2.0 theme. Generic Network theme: branch `v3/okfn-chapter`. Classic tree: tag `classic-2.0.0`.
 
-First intended deployment: [okfn.se](https://okfn.se/). Other chapters can reuse the theme by swapping the Site Logo and, optionally, the **Chapter green** style variation.
+Default logos (SVG) live in `assets/logos/`:
+
+| Use | File |
+|---|---|
+| Header fallback | `Landscape/SVG/OKSE-landscape-full-rgb.svg` |
+| Footer | `Landscape/SVG/OKSE-landscape-black-rgb.svg` |
+| Hero mark | `No text/SVG/OK-notext-full.svg` |
+
+Override the header mark in **Appearance → Editor** with Site Logo if needed. Raster (PNG) variants of the same kit are in the same folder for print and social.
 
 ## Requirements
 
@@ -45,7 +53,7 @@ find -L . -name '*.php' -print0 | xargs -0 -n 1 php -l
 ## Editing (for volunteers)
 
 1. **Appearance → Editor** (Site Editor).
-2. Set **Site Logo** to the chapter landscape logo (colour on white).
+2. Site Logo already falls back to `OKSE-landscape-full-rgb.svg`. Upload a replacement only if you need a different cut.
 3. Open the **Header** template part and edit Navigation links.
 4. Open the **Footer** template part (or the Footer pattern) for social URLs and legal links.
 5. Build pages from **Patterns → OK Network**: Hero punch, Feature cards, Person card, Quote, Latest posts, Newsletter, Page closing, etc.

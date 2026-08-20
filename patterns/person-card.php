@@ -27,8 +27,8 @@
 		<!-- /wp:column -->
 		<!-- wp:column {"width":"33.33%"} -->
 		<div class="wp-block-column" style="flex-basis:33.33%">
-			<!-- wp:image {"sizeSlug":"medium"} -->
-			<figure class="wp-block-image size-medium"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/lg-okfn.svg' ); ?>" alt=""/></figure>
+			<!-- wp:image {"sizeSlug":"medium","className":"okfn-person-card__photo"} -->
+			<figure class="wp-block-image size-medium okfn-person-card__photo"></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

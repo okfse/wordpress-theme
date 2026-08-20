@@ -160,7 +160,7 @@ function okfn_chapter_register_block_styles() {
 add_action( 'init', 'okfn_chapter_register_block_styles' );
 
 /**
- * Falls back to the bundled OKFN wordmark when no custom logo is set.
+ * Falls back to the Sweden landscape wordmark when no custom logo is set.
  *
  * @param string $html Custom logo HTML.
  * @return string
@@ -170,7 +170,7 @@ function okfn_chapter_default_logo( $html ) {
 		return $html;
 	}
 
-	$src = get_template_directory_uri() . '/assets/images/lg-okfn.svg';
+	$src = get_template_directory_uri() . '/assets/logos/Landscape/SVG/OKSE-landscape-full-rgb.svg';
 
 	return sprintf(
 		'<a href="%1$s" class="custom-logo-link" rel="home"><img src="%2$s" class="custom-logo" alt="%3$s" width="180" height="51"/></a>',
@@ -180,3 +180,20 @@ function okfn_chapter_default_logo( $html ) {
 	);
 }
 add_filter( 'get_custom_logo', 'okfn_chapter_default_logo' );
+
+/**
+ * Prints the bundled Sweden favicon unless a Site Icon is set.
+ *
+ * @return void
+ */
+function okfn_chapter_favicon() {
+	if ( has_site_icon() ) {
+		return;
+	}
+
+	printf(
+		'<link rel="icon" href="%s" sizes="any" />' . "\n",
+		esc_url( get_template_directory_uri() . '/assets/images/favicon.ico' )
+	);
+}
+add_action( 'wp_head', 'okfn_chapter_favicon', 2 );

@@ -8,7 +8,7 @@
  * @package OKFN_Chapter
  */
 
-$image = get_template_directory_uri() . '/assets/images/lg-okfn.svg';
+$image = get_template_directory_uri() . '/assets/logos/No text/SVG/OK-notext-full.svg';
 ?>
 <!-- wp:group {"metadata":{"name":"Hero punch"},"className":"okfn-hero is-style-orb-blue has-bg-circle orb-lg","align":"wide","layout":{"type":"constrained","contentSize":"84rem"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-group alignwide okfn-hero is-style-orb-blue has-bg-circle orb-lg" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70)">
@@ -37,7 +37,7 @@ $image = get_template_directory_uri() . '/assets/images/lg-okfn.svg';
 		<!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%">
 			<!-- wp:image {"sizeSlug":"full"} -->
-			<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $image ); ?>" alt=""/></figure>
+			<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr__( 'Open Knowledge Sweden', 'okfn-chapter' ); ?>"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

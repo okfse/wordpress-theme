@@ -9,7 +9,7 @@
  * @package OKFN_Chapter
  */
 
-$logo = get_template_directory_uri() . '/assets/images/lg-okfn-black.svg';
+$logo = get_template_directory_uri() . '/assets/logos/Landscape/SVG/OKSE-landscape-black-rgb.svg';
 ?>
 <!-- wp:group {"metadata":{"name":"Footer"},"align":"full","className":"okfn-footer","layout":{"type":"constrained","contentSize":"84rem"}} -->
 <div class="wp-block-group alignfull okfn-footer">
