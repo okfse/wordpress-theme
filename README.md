@@ -17,10 +17,24 @@ First intended deployment: [okfn.se](https://okfn.se/). Other chapters can reuse
 From this directory:
 
 ```sh
-npx @wp-env/cli start   # or: npm i -D @wordpress/env && npx wp-env start
+npm install
+npm start
 ```
 
-`.wp-env.json` boots WordPress 7.0.4 with this folder as the active theme.
+That runs [wp-env](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) (WordPress 7.0.4) **and activates this theme**. A plain `npx wp-env start` leaves Twenty Twenty-Five active — WordPress always installs a default theme; ours is mapped in as `wordpress-theme` and must be switched on.
+
+| URL | What |
+|---|---|
+| http://localhost:8888/ | Front end (hero, cards, latest posts, footer) |
+| http://localhost:8888/wp-admin/ | Admin. User `admin`, password `password` |
+
+If the site is already running and still shows Twenty Twenty-Five:
+
+```sh
+npx wp-env run cli wp theme activate wordpress-theme
+```
+
+Then reload http://localhost:8888/. You do **not** need to set a Site Logo or rebuild pages to preview: `templates/front-page.html` already inserts the OK Network patterns.
 
 PHP syntax:
 

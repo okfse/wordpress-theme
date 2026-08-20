@@ -1,0 +1,14 @@
+{
+  "name": "okfn-chapter",
+  "private": true,
+  "description": "OK Network Chapter WordPress block theme — local wp-env helpers",
+  "scripts": {
+    "start": "wp-env start && wp-env run cli wp theme activate wordpress-theme",
+    "stop": "wp-env stop",
+    "destroy": "wp-env destroy",
+    "wp": "wp-env run cli wp"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.33.0"
+  }
+}
