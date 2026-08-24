@@ -84,4 +84,4 @@ Not part of the theme. Use Umami Cloud Hobby and the **Integrate Umami** plugin 
 Theme code: GPL-2.0-or-later.  
 Content you publish: typically CC BY 4.0, matching Network practice.
 
-To move this fork to the okfse GitHub org, see [docs/move-to-okfse.md](docs/move-to-okfse.md).
+Repository: [github.com/okfse/wordpress-theme](https://github.com/okfse/wordpress-theme)
