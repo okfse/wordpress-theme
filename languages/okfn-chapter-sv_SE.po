@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OK Network Chapter 3.0.0\n"
-"Report-Msgid-Bugs-To: https://github.com/mattiasaxell/wordpress-theme\n"
+"Report-Msgid-Bugs-To: https://github.com/okfse/wordpress-theme\n"
 "POT-Creation-Date: 2026-08-20\n"
 "PO-Revision-Date: 2026-08-20\n"
 "Last-Translator: Open Knowledge Sweden\n"
