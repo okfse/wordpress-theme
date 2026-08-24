@@ -37,7 +37,7 @@ $image = get_template_directory_uri() . '/assets/images/lg-okfn.svg';
 		<!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%">
 			<!-- wp:image {"sizeSlug":"full"} -->
-			<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $image ); ?>" alt=""/></figure>
+			<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $image ); ?>" alt="" width="320" height="91"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

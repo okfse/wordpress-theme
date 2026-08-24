@@ -45,7 +45,7 @@
 					"slug": "okfn-light-gray"
 				},
 				{
-					"color": "#00a9e0",
+					"color": "#006cb8",
 					"name": "OKFN Link",
 					"slug": "okfn-link"
 				}
@@ -309,7 +309,7 @@
 				},
 				":focus": {
 					"outline": {
-						"color": "var:preset|color|okfn-blue",
+						"color": "var:preset|color|contrast",
 						"offset": "3px",
 						"width": "2px"
 					}
@@ -374,21 +374,24 @@
 					"text": "var:preset|color|okfn-link"
 				},
 				"typography": {
-					"textDecoration": "none"
+					"textDecoration": "underline"
 				},
 				":hover": {
 					"color": {
-						"text": "var:preset|color|okfn-blue"
+						"text": "var:preset|color|contrast"
+					},
+					"typography": {
+						"textDecoration": "underline"
 					}
 				},
 				":active": {
 					"color": {
-						"text": "var:preset|color|okfn-purple"
+						"text": "var:preset|color|contrast"
 					}
 				},
 				":focus": {
 					"outline": {
-						"color": "var:preset|color|okfn-blue",
+						"color": "var:preset|color|contrast",
 						"offset": "2px",
 						"width": "2px"
 					}

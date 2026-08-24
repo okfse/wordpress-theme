@@ -16,7 +16,7 @@ $logo = get_template_directory_uri() . '/assets/images/lg-okfn-black.svg';
 	<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 	<div class="wp-block-group">
 		<!-- wp:image {"width":"180px","sizeSlug":"full","linkDestination":"custom"} -->
-		<figure class="wp-block-image size-full is-resized"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"/></a></figure>
+		<figure class="wp-block-image size-full is-resized"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" width="180" height="51"/></a></figure>
 		<!-- /wp:image -->
 
 		<!-- wp:social-links {"iconColor":"contrast","iconColorValue":"#231f20","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"right"}} -->

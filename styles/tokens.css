@@ -159,6 +159,29 @@
 	filter: none;
 }
 
+.wp-block-skip-link:focus,
+.skip-link:focus {
+	position: fixed !important;
+	top: 1rem !important;
+	left: 1rem !important;
+	z-index: 99999 !important;
+	width: auto !important;
+	height: auto !important;
+	clip: auto !important;
+	clip-path: none !important;
+	background: var(--wp--preset--color--contrast) !important;
+	color: var(--wp--preset--color--base) !important;
+	padding: 0.75rem 1.5rem !important;
+	font-family: var(--wp--preset--font-family--hk-grotesk);
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: 700;
+	border-radius: var(--okfn-radius-button);
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+	outline: 2px solid var(--wp--preset--color--okfn-blue);
+	outline-offset: 2px;
+	text-decoration: underline;
+}
+
 @media (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;

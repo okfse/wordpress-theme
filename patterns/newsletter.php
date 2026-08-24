@@ -34,7 +34,7 @@ $image = get_template_directory_uri() . '/assets/images/section-newsletter.svg';
 		<!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%">
 			<!-- wp:image {"sizeSlug":"full"} -->
-			<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $image ); ?>" alt=""/></figure>
+			<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $image ); ?>" alt="" width="489" height="250"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->
