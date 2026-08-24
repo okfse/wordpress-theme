@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.0/theme.json",
+	"version": 3,
+	"title": "Chapter purple",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#231f20",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#7c3aed",
+					"name": "OKFN Blue",
+					"slug": "okfn-blue"
+				},
+				{
+					"color": "#adffed",
+					"name": "OKFN Green",
+					"slug": "okfn-green"
+				},
+				{
+					"color": "#e077ff",
+					"name": "OKFN Purple",
+					"slug": "okfn-purple"
+				},
+				{
+					"color": "#e4ff36",
+					"name": "OKFN Yellow",
+					"slug": "okfn-yellow"
+				},
+				{
+					"color": "#f8f8f8",
+					"name": "OKFN Light Gray",
+					"slug": "okfn-light-gray"
+				},
+				{
+					"color": "#6d28d9",
+					"name": "OKFN Link",
+					"slug": "okfn-link"
+				}
+			]
+		}
+	}
+}
