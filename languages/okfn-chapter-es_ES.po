@@ -1,0 +1,195 @@
+# Copyright (C) 2026 Open Knowledge Foundation / Network Chapters
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: OK Network Chapter 3.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/okfse/wordpress-theme\n"
+"POT-Creation-Date: 2026-08-24\n"
+"PO-Revision-Date: 2026-08-24\n"
+"Last-Translator: Open Knowledge Network\n"
+"Language-Team: Spanish\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "OK Network"
+msgstr "Red OK"
+
+msgid "Chapter layouts ported from the Open Knowledge visual identity."
+msgstr "Diseños de capítulos adaptados de la identidad visual de Open Knowledge."
+
+msgid "Pill"
+msgstr "Píldora"
+
+msgid "White fill"
+msgstr "Relleno blanco"
+
+msgid "Highlight (mono)"
+msgstr "Destacado (mono)"
+
+msgid "Blue orb"
+msgstr "Orbe azul"
+
+msgid "Green orb"
+msgstr "Orbe verde"
+
+msgid "Purple orb"
+msgstr "Orbe púrpura"
+
+msgid "Yellow orb"
+msgstr "Orbe amarillo"
+
+msgid "A fair, free and <strong>open</strong> future."
+msgstr "Un futuro justo, libre y <strong>abierto</strong>."
+
+msgid "We work for a more open digital society — where non-sensitive information is open, free to use, build on and share."
+msgstr "Trabajamos por una sociedad digital más abierta, donde la información no sensible sea abierta, libre de usar, desarrollar y compartir."
+
+msgid "Our mission"
+msgstr "Nuestra misión"
+
+msgid "Who we are"
+msgstr "Quiénes somos"
+
+msgid "A local chapter of the Open Knowledge Network, working in the open for public good."
+msgstr "Un capítulo local de la Red Open Knowledge, trabajando en abierto por el bien común."
+
+msgid "Open knowledge can be created and applied in many ways."
+msgstr "El conocimiento abierto se puede crear y aplicar de muchas maneras."
+
+msgid "How we work"
+msgstr "Cómo trabajamos"
+
+msgid "A global network"
+msgstr "Una red global"
+
+msgid "Meetings, training, innovation, sharing and research: join us in opening knowledge for everyone."
+msgstr "Reuniones, formación, innovación, intercambio e investigación: únete a nosotros para abrir el conocimiento para todos."
+
+msgid "Get involved"
+msgstr "Participa"
+
+msgid "Open expertise"
+msgstr "Experiencia abierta"
+
+msgid "We help partners with research, policy and technical work on open data and public information."
+msgstr "Ayudamos a nuestros socios con investigación, políticas y trabajo técnico sobre datos abiertos e información pública."
+
+msgid "Contact us"
+msgstr "Contáctanos"
+
+msgid "Open data"
+msgstr "Datos abiertos"
+
+msgid "Democracy, science, culture and markets all work better when information is open by default."
+msgstr "La democracia, la ciencia, la cultura y los mercados funcionan mejor cuando la información es abierta por defecto."
+
+msgid "Why open data"
+msgstr "Por qué datos abiertos"
+
+msgid "Read more"
+msgstr "Leer más"
+
+msgid "Website"
+msgstr "Sitio web"
+
+msgid "Latest posts"
+msgstr "Últimas publicaciones"
+
+msgid "No posts found."
+msgstr "No se encontraron publicaciones."
+
+msgid "More posts"
+msgstr "Más publicaciones"
+
+msgid "Name"
+msgstr "Nombre"
+
+msgid "Role"
+msgstr "Cargo"
+
+msgid "Short biography. Replace this text, the photo, and the contact details in the Site Editor."
+msgstr "Biografía breve. Reemplace este texto, la foto y los detalles de contacto en el Editor del sitio."
+
+msgid "We believe open knowledge can empower everyone."
+msgstr "Creemos que el conocimiento abierto puede empoderar a todos."
+
+msgid "Open Knowledge Network"
+msgstr "Red Open Knowledge"
+
+msgid "Impact"
+msgstr "Impacto"
+
+msgid "Years as a chapter"
+msgstr "Años como capítulo"
+
+msgid "Projects and briefs"
+msgstr "Proyectos e informes"
+
+msgid "Global network"
+msgstr "Red global"
+
+msgid "BY 4.0 by default"
+msgstr "BY 4.0 por defecto"
+
+msgid "Don't miss<br>a thing"
+msgstr "No te pierdas<br>nada"
+
+msgid "Stay on top of what is happening in the open movement. We will never spam you."
+msgstr "Mantente al tanto de lo que sucede en el movimiento abierto. Nunca te enviaremos correo no deseado."
+
+msgid "Subscribe"
+msgstr "Suscribirse"
+
+msgid "Support a fair, free and <strong>open</strong> future."
+msgstr "Apoya un futuro justo, libre y <strong>abierto</strong>."
+
+msgid "Donate now"
+msgstr "Donar ahora"
+
+msgid "Open Knowledge Sweden is a non-profit organisation working for a fair, free and open future."
+msgstr "Open Knowledge es una organización sin fines de lucro que trabaja por un futuro justo, libre y abierto."
+
+msgid "Privacy policy"
+msgstr "Política de privacidad"
+
+msgid "Cookie policy"
+msgstr "Política de cookies"
+
+msgid "Code of conduct"
+msgstr "Código de conducta"
+
+msgid "IP policy"
+msgstr "Política de propiedad intelectual"
+
+msgid "Statutes"
+msgstr "Estatutos"
+
+msgid "Donate"
+msgstr "Donar"
+
+msgid "Forum"
+msgstr "Foro"
+
+msgid "Source code available under the MIT license."
+msgstr "Código fuente disponible bajo la licencia MIT."
+
+msgid "Content on this site is licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>."
+msgstr "El contenido de este sitio está bajo una <a href=\"https://creativecommons.org/licenses/by/4.0/\">Licencia Creative Commons Atribución 4.0 Internacional</a>."
+
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+msgid "The page you are looking for does not exist or has been moved."
+msgstr "La página que busca no existe o ha sido movida."
+
+msgid "Back home"
+msgstr "Volver al inicio"
+
+msgid "No posts were found. Try a different search or browse the latest posts from the blog."
+msgstr "No se encontraron publicaciones. Intente una búsqueda diferente o explore las publicaciones del blog."
+
+msgid "Comments"
+msgstr "Comentarios"
