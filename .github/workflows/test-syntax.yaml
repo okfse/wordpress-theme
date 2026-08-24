@@ -1,17 +1,18 @@
-name: Run tests
+name: CI & Quality Assurance
 
 on:
   push:
     branches:
       - master
       - v3/okfn-chapter
+      - sweden/okfn-chapter
   pull_request:
     branches:
       - master
 
 jobs:
-  php:
-    name: PHP lint and theme.json
+  lint:
+    name: Lint & Validation
     runs-on: ubuntu-latest
     env:
       PHP_VERSION: '8.2'
@@ -20,14 +21,28 @@ jobs:
       - name: Checkout the project
         uses: actions/checkout@v4
 
-      - name: Setup PHP
+      - name: Setup PHP and Composer
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ env.PHP_VERSION }}
-          extensions: mbstring
+          extensions: mbstring, json, gettext
+          tools: phpcs
 
-      - name: PHP syntax
-        run: find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
+      - name: PHP Syntax Check
+        run: find -L . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n 1 -P 4 php -l
 
-      - name: Validate theme.json
-        run: python3 -c "import json,sys; json.load(open('theme.json')); json.load(open('styles/chapter-green.json'))"
+      - name: Validate theme.json and Style Variations
+        run: python3 -c "import json, glob; [json.load(open(f)) for f in ['theme.json'] + glob.glob('styles/*.json')]"
+
+      - name: Validate Translation PO Files
+        run: |
+          sudo apt-get install -y gettext
+          for po in languages/*.po; do
+            msgfmt -c -v -o /dev/null "$po"
+          done
+
+      - name: Validate Clean Production ZIP Packaging
+        run: |
+          git archive --format=zip --prefix=okfn-chapter/ -o okfn-chapter.zip HEAD
+          unzip -l okfn-chapter.zip | grep style.css
+          unzip -l okfn-chapter.zip | grep theme.json

@@ -1,0 +1,29 @@
+name: Build & Release Theme Package
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    name: Package and Publish Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build clean production ZIP archive
+        run: |
+          git archive --format=zip --prefix=okfn-chapter/ -o okfn-chapter.zip HEAD
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: okfn-chapter.zip
+          generate_release_notes: true
+          draft: false
+          prerelease: false
