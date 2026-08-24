@@ -1,80 +1,79 @@
-# OKFN WordPress Theme
+# OK Network Chapter
 
-OKFNWP is a WordPress theme built on Bootstrap.
+WordPress **7.0+** block theme for Open Knowledge Network chapters. It ports the [okfn.org](https://okfn.org/) visual identity (palette, HK Grotesk, pill buttons, colour orbs) into core Site Editor and block patterns. No Astra, Spectra, Elementor, or other page-builder plugin is required.
 
-## Getting Started
+Version **3.0.0** replaces the deprecated classic `OKFN-WP` 2.0 theme (Bootstrap 4, jQuery, mmenu, Grunt). The classic tree is tagged `classic-2.0.0`.
 
-**You'll need the following installed before continuing:**
+First intended deployment: [okfn.se](https://okfn.se/). Other chapters can reuse the theme by swapping the Site Logo and, optionally, the **Chapter green** style variation.
 
-- [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
-- [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
+## Requirements
 
-To get started run:
+- WordPress 7.0 or later
+- PHP 8.2 or later
+- No required plugins. Optional: Contact Form 7 for contact pages; Create Block Theme only while developing.
 
-`npm install && grunt watch`
+## Local development
 
-## Templates
-
-### **Homepage**
-
-The homepage template is a regular full-width content page. Use the `[latestposts]` shortcode to display the latest blog posts.
-
-## Shortcodes
-
-### **Latest Blog Posts**
-
-To add a 3-column row of the latest blog posts, use:
-
-`[latestposts]`
-
-To change the section heading from the default 'Latest posts from the blog', pass in a title="" parameter:
-
-`[latestposts title="Recent Posts"]`
-
-## Coding Standards
-
-Uses [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer/) as the basis, along with [WordPress Coding Standards](https://github.com/WordPress/WordPress-Coding-Standards). [PHPCSUtils](https://github.com/PHPCSStandards/PHPCSUtils) and [PHPCSExtra](https://github.com/PHPCSStandards/PHPCSExtra) are also required.
-
-### Setup
-
-Make sure you are running PHP CodeSniffer 3.7 or above. Clone it from GitHub and add its binaries to the relevant system folders, so you can use `phpcs` or `phpcbf`, without the need to specify the exact path to the binary.
-
-1. Clone https://github.com/squizlabs/PHP_CodeSniffer/ to your home folder.
-2. Set symlinks to the binaries of `phpcs` and `phpcbf` container in `~/PHP_CodeSniffer/bin/` with the following commands in any Linux distribution.
+From this directory:
 
 ```sh
-sudo ln -s ~/PHP_CodeSniffer/bin/phpcs /usr/bin
-sudo ln -s ~/PHP_CodeSniffer/bin/phpcbf /usr/bin
+npm install
+npm start
 ```
 
-Once symlinks are created, try to execute `phpcs` in the terminal. You should get the following output and it means that you're all set to use PHP CodeSniffer.
+That runs [wp-env](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) (WordPress 7.0.4) **and activates this theme**. A plain `npx wp-env start` leaves Twenty Twenty-Five active — WordPress always installs a default theme; ours is mapped in as `wordpress-theme` and must be switched on.
+
+| URL | What |
+|---|---|
+| http://localhost:8888/ | Front end (hero, cards, latest posts, footer) |
+| http://localhost:8888/wp-admin/ | Admin. User `admin`, password `password` |
+
+If the site is already running and still shows Twenty Twenty-Five:
 
 ```sh
-ERROR: You must supply at least one file or directory to process.
-
-Run "phpcs --help" for usage information
+npx wp-env run cli wp theme activate wordpress-theme
 ```
 
-3. Next, clone https://github.com/WordPress/WordPress-Coding-Standards to your home folder in a subfolder called `wpcs` for your convenience.
+Then reload http://localhost:8888/. You do **not** need to set a Site Logo or rebuild pages to preview: `templates/front-page.html` already inserts the OK Network patterns.
 
-4. Clone https://github.com/PHPCSStandards/PHPCSUtils to your home folder
-
-5. Clone https://github.com/PHPCSStandards/PHPCSExtra to your home folder
-
-6. The only thing left to do is to make sure `phpcs` uses these extra sniffs and knows where to find them. We do that by updating it configuration.
+PHP syntax:
 
 ```sh
-phpcs --config-set installed_paths ~/wpcs,~/PHPCSUtils/PHPCSUtils,~/PHPCSExtra
+find -L . -name '*.php' -print0 | xargs -0 -n 1 php -l
 ```
 
-If the configuration is properly updated, you should get the following output when executing `phpcs -i`.
+## Editing (for volunteers)
 
-```sh
-The installed coding standards are MySource, PEAR, PSR1, PSR2, PSR12, Squiz, Zend, WordPress, WordPress-Core, WordPress-Docs, WordPress-Extra, PHPCSUtils, NormalizedArrays and Universal
-```
+1. **Appearance → Editor** (Site Editor).
+2. Set **Site Logo** to the chapter landscape logo (colour on white).
+3. Open the **Header** template part and edit Navigation links.
+4. Open the **Footer** template part (or the Footer pattern) for social URLs and legal links.
+5. Build pages from **Patterns → OK Network**: Hero punch, Feature cards, Person card, Quote, Latest posts, Newsletter, Page closing, etc.
+6. Button styles: default (black fill), **White fill**, **Pill** (outline). Heading style **Highlight (mono)** uses Necto Mono.
+7. Group styles **Blue / Green / Purple / Yellow orb** add the brand colour-circle background.
 
-If something is not right and you can't get it to work, use `phpcs --config-show` to see what you have PHP CodeSniffer configured with.
+Do not install a page builder. Layout lives in patterns; you change text, images, and URLs.
 
-### Testing
+## Fonts
 
-Just run `./run_tests.sh` and follow the output. Test will find all kinds of errors and the simple ones will be corrected automatically. For the other ones you'll need to rerun the tests to confirm they have been resolved.
+Both faces are **SIL OFL 1.1** and **self-hosted in the theme**. `styles/fonts.css` registers them with local `@font-face` URLs. Nothing is loaded from Google Fonts or any other remote host.
+
+- **HK Grotesk** — WOFF2 in `assets/fonts/hk-grotesk/` (`OFL.txt`)
+- **Necto Mono** — OTF in `assets/fonts/necto-mono/` (`OFL.txt`); used for highlight headings and citations
+
+## Analytics (Umami)
+
+Not part of the theme. Use Umami Cloud Hobby and the **Integrate Umami** plugin on the live site. See [docs/umami.md](docs/umami.md). Do not enable it in wp-env.
+
+## What this theme does not do
+
+- It does not convert classic PHP templates or `[latestposts]` shortcodes automatically. See `docs/migration.md`.
+- It does not add Polylang. okfn.se English pages stay as a separate `/en/` tree unless you add a multilingual plugin later.
+- It does not inject analytics IDs. See [docs/umami.md](docs/umami.md).
+
+## Licence
+
+Theme code: GPL-2.0-or-later.  
+Content you publish: typically CC BY 4.0, matching Network practice.
+
+Repository: [github.com/okfse/wordpress-theme](https://github.com/okfse/wordpress-theme)

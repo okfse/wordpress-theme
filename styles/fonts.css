@@ -1,0 +1,60 @@
+/**
+ * Self-hosted webfonts. All files live in this theme; nothing is loaded
+ * from Google Fonts, a CDN, or any other remote host.
+ */
+
+@font-face {
+	font-family: "HK Grotesk";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("../assets/fonts/hk-grotesk/HKGrotesk-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "HK Grotesk";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url("../assets/fonts/hk-grotesk/HKGrotesk-Italic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "HK Grotesk";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url("../assets/fonts/hk-grotesk/HKGrotesk-Medium.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "HK Grotesk";
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url("../assets/fonts/hk-grotesk/HKGrotesk-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "HK Grotesk";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("../assets/fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "HK Grotesk";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url("../assets/fonts/hk-grotesk/HKGrotesk-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Necto Mono";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("../assets/fonts/necto-mono/nectomono-regular.otf") format("opentype");
+}

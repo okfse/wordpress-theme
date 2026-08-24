@@ -1,0 +1,276 @@
+/**
+ * Header, footer, cards, articles, and form chrome.
+ */
+
+.okfn-header {
+	padding-block: 1.25rem 2rem;
+	position: relative;
+	z-index: 100;
+}
+
+.okfn-header .wp-block-site-logo img {
+	height: 4.375rem;
+	width: auto;
+}
+
+.okfn-header .wp-block-site-title.screen-reader-text,
+.okfn-header .screen-reader-text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+@media (min-width: 782px) {
+	.okfn-header {
+		padding-block: 2rem 3rem;
+	}
+
+	.okfn-header .wp-block-site-logo img {
+		height: 5.625rem;
+	}
+}
+
+.okfn-header .wp-block-navigation {
+	font-family: var(--wp--preset--font-family--hk-grotesk);
+}
+
+.okfn-header .wp-block-navigation .wp-block-navigation-item__content {
+	border-radius: var(--okfn-radius-pill);
+	padding: 0.75rem 1.5rem;
+	min-height: 4.375rem;
+	display: flex;
+	align-items: center;
+}
+
+.okfn-header .wp-block-navigation .wp-block-navigation-submenu {
+	border: 2px solid var(--wp--preset--color--okfn-blue);
+	border-radius: var(--okfn-radius-submenu);
+	background: color-mix(in srgb, var(--wp--preset--color--base) 90%, transparent);
+	padding: 1.25rem 3.5rem;
+}
+
+.okfn-header .wp-block-navigation__responsive-container.is-menu-open {
+	background: var(--wp--preset--color--okfn-green);
+	padding: 3rem 2rem;
+}
+
+.okfn-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+	font-size: 1.5rem;
+	min-height: auto;
+	justify-content: flex-start;
+}
+
+.okfn-header .wp-block-search .wp-block-search__button {
+	background: transparent;
+	color: var(--wp--preset--color--contrast);
+	box-shadow: none;
+	padding: 0.5rem;
+}
+
+.okfn-header .wp-block-search .wp-block-search__button:hover,
+.okfn-header .wp-block-search .wp-block-search__button:focus-visible {
+	color: var(--wp--preset--color--okfn-blue);
+}
+
+.okfn-main {
+	padding-block-end: var(--wp--preset--spacing--70);
+}
+
+.okfn-hero {
+	align-items: center;
+}
+
+.okfn-hero h1,
+.okfn-hero .wp-block-heading {
+	line-height: 1.05;
+}
+
+.okfn-feature-card {
+	position: relative;
+	padding: 2.5rem 2rem 5rem;
+	border: 3px solid var(--wp--preset--color--contrast);
+	background: color-mix(in srgb, var(--wp--preset--color--base) 30%, transparent);
+	height: 100%;
+	text-decoration: none;
+	color: inherit;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.okfn-feature-card.is-yellow {
+	background: color-mix(in srgb, var(--wp--preset--color--okfn-yellow) 25%, transparent);
+	border: 0;
+}
+
+.okfn-feature-card .link-arrow-curved {
+	position: absolute;
+	left: 2rem;
+	bottom: 2rem;
+}
+
+.okfn-person-card {
+	background: color-mix(in srgb, var(--wp--preset--color--okfn-yellow) 25%, transparent);
+	padding: 2.5rem;
+}
+
+.okfn-person-card .okfn-person-card__role {
+	font-family: var(--wp--preset--font-family--necto-mono);
+	font-size: var(--wp--preset--font-size--large);
+	margin-bottom: 1.5rem;
+}
+
+.okfn-person-card img {
+	width: 10rem;
+	height: 11.25rem;
+	object-fit: cover;
+}
+
+.okfn-stat {
+	text-align: center;
+}
+
+.okfn-stat__number {
+	display: block;
+	font-size: var(--wp--preset--font-size--huge);
+	font-weight: 700;
+	line-height: 1;
+}
+
+.okfn-article-card .wp-block-post-featured-image img {
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 2.375rem;
+	box-shadow: 0 4px 11px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 781px) {
+	.okfn-article-card .wp-block-post-featured-image img {
+		border-radius: 50%;
+	}
+}
+
+.okfn-article-card .wp-block-post-title a:hover {
+	color: var(--wp--preset--color--okfn-blue);
+}
+
+.okfn-article-card .wp-block-post-author-name,
+.okfn-article-card .wp-block-post-date {
+	font-family: var(--wp--preset--font-family--necto-mono);
+	font-size: var(--wp--preset--font-size--okfn-sm);
+}
+
+.okfn-page-closing {
+	text-align: center;
+	padding-block: var(--wp--preset--spacing--70);
+}
+
+.okfn-quote .wp-block-quote {
+	border: 0;
+	padding: 0;
+}
+
+.okfn-quote .wp-block-quote p::before,
+.okfn-quote .wp-block-quote p::after {
+	content: "”";
+}
+
+.okfn-footer {
+	background: var(--wp--preset--color--okfn-blue);
+	color: var(--wp--preset--color--contrast);
+	padding-block: 3rem;
+	margin-top: var(--wp--preset--spacing--60);
+}
+
+.okfn-footer a {
+	color: var(--wp--preset--color--contrast);
+	font-weight: 700;
+}
+
+.okfn-footer a:hover,
+.okfn-footer a:focus-visible {
+	color: var(--wp--preset--color--base);
+}
+
+.okfn-footer a:active {
+	color: var(--wp--preset--color--okfn-purple);
+}
+
+.okfn-footer .wp-block-social-links {
+	gap: 1.25rem;
+}
+
+.okfn-footer .wp-block-social-links .wp-social-link {
+	background: transparent;
+}
+
+.okfn-footer .wp-block-social-links .wp-social-link svg {
+	width: 2rem;
+	height: 2rem;
+}
+
+.okfn-footer__legal {
+	font-size: var(--wp--preset--font-size--small);
+	margin-top: 2rem;
+}
+
+.okfn-footer__legal p {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.okfn-form .wp-block-search__inside-wrapper,
+.okfn-newsletter-form {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	border: 2px solid var(--wp--preset--color--contrast);
+	border-radius: var(--okfn-radius-button);
+	padding: 0.25rem 0.25rem 0.25rem 1rem;
+	background: var(--wp--preset--color--base);
+}
+
+.okfn-newsletter-form input[type="email"] {
+	flex: 1;
+	border: 0;
+	background: transparent;
+	font: inherit;
+	min-width: 0;
+}
+
+.okfn-newsletter-form input[type="email"]:focus {
+	outline: none;
+}
+
+.okfn-newsletter-form .wp-block-button__link,
+.okfn-newsletter-form button {
+	border-radius: var(--okfn-radius-button);
+}
+
+.wp-block-post-content > .alignwide,
+.okfn-main > .alignwide {
+	max-width: var(--okfn-master);
+}
+
+body .is-layout-constrained > .alignfull {
+	margin-left: calc(-1 * var(--wp--style--root--padding-left, 2rem));
+	margin-right: calc(-1 * var(--wp--style--root--padding-right, 2rem));
+	width: auto;
+	max-width: none;
+}
+
+.wp-block-button__link {
+	transition: color 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out;
+}
+
+.wp-block-button__link:active {
+	transition-duration: 75ms;
+}

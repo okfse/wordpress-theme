@@ -1,0 +1,14 @@
+{
+  "core": "https://wordpress.org/wordpress-7.0.4.zip",
+  "phpVersion": "8.2",
+  "themes": ["."],
+  "config": {
+    "WP_DEBUG": true,
+    "WP_DEBUG_LOG": true,
+    "SCRIPT_DEBUG": true,
+    "WP_DEFAULT_THEME": "wordpress-theme"
+  },
+  "lifecycleScripts": {
+    "afterStart": "npx --yes @wordpress/env run cli wp theme activate wordpress-theme"
+  }
+}

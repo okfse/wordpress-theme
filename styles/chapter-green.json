@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.0/theme.json",
+	"version": 3,
+	"title": "Chapter green",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#231f20",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#00d1ff",
+					"name": "OKFN Blue",
+					"slug": "okfn-blue"
+				},
+				{
+					"color": "#2dd4bf",
+					"name": "OKFN Green",
+					"slug": "okfn-green"
+				},
+				{
+					"color": "#c084fc",
+					"name": "OKFN Purple",
+					"slug": "okfn-purple"
+				},
+				{
+					"color": "#4ade80",
+					"name": "OKFN Yellow",
+					"slug": "okfn-yellow"
+				},
+				{
+					"color": "#f8f8f8",
+					"name": "OKFN Light Gray",
+					"slug": "okfn-light-gray"
+				},
+				{
+					"color": "#00a9e0",
+					"name": "OKFN Link",
+					"slug": "okfn-link"
+				}
+			]
+		}
+	}
+}
