@@ -1,6 +1,6 @@
-# Migrating okfn.se (and other classic OKFN-WP sites)
+# Migrating okfn.se
 
-The classic theme (`OKFN-WP` 2.0, folder names such as `wordpress-theme-2022-05-10`) is a Bootstrap 4 PHP theme. This block theme is a replacement, not an in-place upgrade.
+The classic theme (`OKFN-WP` 2.0, folder names such as `wordpress-theme-2022-05-10`) is a Bootstrap 4 PHP theme. This block theme is a replacement, not an in-place upgrade. This document is the Sweden cutover. Other chapters follow [fork-a-chapter.md](fork-a-chapter.md) and [starter-copy.md](starter-copy.md).
 
 Classic code is preserved in Git as tag `classic-2.0.0`.
 
@@ -26,8 +26,9 @@ Classic code is preserved in Git as tag `classic-2.0.0`.
 1. Deploy this repository as `wp-content/themes/okfn-chapter/` (do not reuse the dated classic folder name).
 2. Appearance → Themes → activate **OK Network Chapter**.
 3. Appearance → Editor → upload the chapter Site Logo (landscape, colour).
-4. Edit the Header Navigation. Generic defaults are Who we are, What we do, Network, Get involved, Blog, and Contact. Page copy is in [starter-copy.md](starter-copy.md). The Sweden build keeps its existing slugs.
-5. Edit Footer social URLs and legal links.
+4. The header already uses the live Swedish slugs: `/om/`, `/oppnadata/`, `/engagera-dig/`, `/blog/`, `/kontakt/`. Donate stays at `/donera/`. Page copy is in [starter-copy-sv.md](starter-copy-sv.md).
+5. Footer social links are Mastodon `mastodon.nu/@okfse`, GitHub `okfse`, LinkedIn `open-knowledge-sweden`, and X `okfse`. Confirm those accounts before cutover. https://okfn.org/en/sweden still lists older URLs (`se.okfn.org`, `mastodon.se/@okfse`, `open-knowledge-sverige`, `twitter.com/OKFSE`, Facebook). Updating that Network page is outside this repository.
+6. Swedish legal sentences in the starter copy need a native-speaker review on the board before they go live. Do not paste 2021 board biographies from okfn.org into person cards.
 
 ## Content
 

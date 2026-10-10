@@ -12,22 +12,22 @@ $topics = array(
 	array(
 		'title' => __( 'Global challenges', 'okfn-chapter' ),
 		'text'  => __( 'Open information helps people understand shared problems and see what is working.', 'okfn-chapter' ),
-		'url'   => home_url( '/what-we-do/#global-challenges' ),
+		'url'   => home_url( '/oppnadata/varfor-oppna-data/globala-utmaningar/' ),
 	),
 	array(
 		'title' => __( 'Democratic accountability', 'okfn-chapter' ),
 		'text'  => __( 'People need access to information about how public institutions work.', 'okfn-chapter' ),
-		'url'   => home_url( '/what-we-do/#democratic-accountability' ),
+		'url'   => home_url( '/oppnadata/varfor-oppna-data/medborgarskap-demokratisk-ansvarighet-och-styrning/' ),
 	),
 	array(
 		'title' => __( 'Research, science, and culture', 'okfn-chapter' ),
 		'text'  => __( 'Knowledge people can use, reuse, and share.', 'okfn-chapter' ),
-		'url'   => home_url( '/what-we-do/#research-science-culture' ),
+		'url'   => home_url( '/oppnadata/varfor-oppna-data/forskning-vetenskap-och-kultur/' ),
 	),
 	array(
 		'title' => __( 'Consumers and corporate accountability', 'okfn-chapter' ),
 		'text'  => __( 'Information about who controls organisations, products, and services.', 'okfn-chapter' ),
-		'url'   => home_url( '/what-we-do/#corporate-accountability' ),
+		'url'   => home_url( '/oppnadata/varfor-oppna-data/konsumenter-och-foretags-ansvarighet/' ),
 	),
 );
 ?>

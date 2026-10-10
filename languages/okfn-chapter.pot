@@ -43,7 +43,7 @@ msgstr ""
 msgid "Support a fair, sustainable, and open future."
 msgstr ""
 
-msgid "Money given here funds this chapter."
+msgid "Gifts go to Open Knowledge Sweden, organisation number 802494-0937."
 msgstr ""
 
 msgid "Donate"
@@ -109,7 +109,7 @@ msgstr ""
 msgid "We build local capacity"
 msgstr ""
 
-msgid "Research, policy, and practical help with open data."
+msgid "We help organisations with research, policy, and practical work on open data."
 msgstr ""
 
 msgid "Contact us"
@@ -124,13 +124,22 @@ msgstr ""
 msgid "The Network"
 msgstr ""
 
-msgid "This chapter is an independent non-profit working for a fair, sustainable and open future."
+msgid "Open Knowledge Sweden is an independent non-profit working for a fair, sustainable and open future."
 msgstr ""
 
 msgid "Privacy policy"
 msgstr ""
 
+msgid "Cookie policy"
+msgstr ""
+
 msgid "Code of conduct"
+msgstr ""
+
+msgid "IP policy"
+msgstr ""
+
+msgid "Statutes"
 msgstr ""
 
 msgid "Open Knowledge Network"
@@ -148,10 +157,16 @@ msgstr ""
 msgid "Openness is our foundation."
 msgstr ""
 
-msgid "We believe knowledge should be accessible to everyone. This chapter advances open content, data, and technology in its own country, together with the Open Knowledge Network."
+msgid "We believe knowledge should be accessible to everyone. Open Knowledge Sweden advances open content, data, and technology in Sweden, together with the Open Knowledge Network."
 msgstr ""
 
-msgid "Who we are"
+msgid "We work for a more open digital Sweden, where non-sensitive information is open and free to use, build on, and share."
+msgstr ""
+
+msgid "Our mission"
+msgstr ""
+
+msgid "Open Knowledge Sweden"
 msgstr ""
 
 msgid "Page not found"
@@ -166,10 +181,7 @@ msgstr ""
 msgid "No posts were found. Try a different search or browse the latest posts from the blog."
 msgstr ""
 
-msgid "Example language switcher"
-msgstr ""
-
-msgid "Add language"
+msgid "Language"
 msgstr ""
 
 msgid "Latest posts"
@@ -206,6 +218,12 @@ msgid "BY 4.0 by default"
 msgstr ""
 
 msgid "Let’s build a world where knowledge is accessible to everyone."
+msgstr ""
+
+msgid "Donate now"
+msgstr ""
+
+msgid "Who we are"
 msgstr ""
 
 msgid "A local chapter of the Open Knowledge Network, working in the open for public good."

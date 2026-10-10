@@ -22,14 +22,14 @@
 			<p class="okfn-person-card__role"><?php esc_html_e( 'Role', 'okfn-chapter' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph -->
-			<p><a href="mailto:contact@okfn.se">contact@okfn.se</a></p>
+			<p><a href="<?php echo esc_url( 'mailto:' . okfn_chapter_contact_email() ); ?>"><?php echo esc_html( okfn_chapter_contact_email() ); ?></a></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:column -->
 		<!-- wp:column {"width":"33.33%"} -->
 		<div class="wp-block-column" style="flex-basis:33.33%">
 			<!-- wp:image {"sizeSlug":"medium"} -->
-			<figure class="wp-block-image size-medium"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/lg-okfn.svg' ); ?>" alt="" width="180" height="51"/></figure>
+			<figure class="wp-block-image size-medium"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/logos/No text/SVG/OK-notext-full.svg' ); ?>" alt="" width="111" height="120"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

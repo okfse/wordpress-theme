@@ -1,10 +1,18 @@
-# OK Network Chapter
+# OK Network Chapter — Sweden
 
-WordPress **7.0+** block theme for Open Knowledge Network chapters. It ports the [okfn.org](https://okfn.org/) visual identity (palette, HK Grotesk, pill buttons, colour orbs) into core Site Editor and block patterns. No Astra, Spectra, Elementor, or other page-builder plugin is required.
+WordPress **7.0+** block theme for [Open Knowledge Sweden](https://okfn.se/) (`okfn.se`). This branch is the Sweden layer on the generic Network theme: OKSE logos, Swedish navigation, `sv_SE`, and Sweden legal links. Visual identity (palette, HK Grotesk, pill buttons, colour orbs) matches okfn.org. No Astra, Spectra, Elementor, or other page-builder plugin is required.
 
-Version **3.0.0** replaces the deprecated classic `OKFN-WP` 2.0 theme (Bootstrap 4, jQuery, mmenu, Grunt). The classic tree is tagged `classic-2.0.0`.
+Version **3.1.0**. The generic chapter theme is branch `v3/theme-improvements` (upstream `v3/okfn-chapter`). The classic Bootstrap theme is tag `classic-2.0.0`. Do not copy this repository into a second theme repo. See [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
 
-First intended deployment: [okfn.se](https://okfn.se/). Other chapters can reuse the theme by swapping the Site Logo and, optionally, the **Chapter green** style variation.
+Default logos (SVG) live in `assets/logos/`:
+
+| Use | File |
+|---|---|
+| Header fallback | `Landscape/SVG/OKSE-landscape-full-rgb.svg` |
+| Footer | `Landscape/SVG/OKSE-landscape-black-rgb.svg` |
+| Hero mark | `No text/SVG/OK-notext-full.svg` |
+
+Raster PNG variants of the same kit are in the same folder for print and social. The header falls back to the landscape wordmark when no Site Logo is set.
 
 ## Requirements
 
@@ -45,8 +53,8 @@ find -L . -name '*.php' -print0 | xargs -0 -n 1 php -l
 ## Editing (for volunteers)
 
 1. **Appearance → Editor** (Site Editor).
-2. Set **Site Logo** to the chapter landscape logo (colour on white).
-3. Open the **Header** template part and edit Navigation links.
+2. Site Logo already falls back to `OKSE-landscape-full-rgb.svg`. Upload a replacement only if you need a different cut.
+3. The header navigation is Swedish and keeps the existing slugs: Om, Vad vi gör, Engagera dig, Blogg, Kontakt.
 4. Open the **Footer** template part (or the Footer pattern) for social URLs and legal links.
 5. Build pages from **Patterns → OK Network**: Hero punch, Feature cards, Person card, Quote, Latest posts, Newsletter, Page closing, etc.
 6. Button styles: default (black fill), **White fill**, **Pill** (outline). Heading style **Highlight (mono)** uses Necto Mono.
@@ -61,7 +69,9 @@ Both faces are **SIL OFL 1.1** and **self-hosted in the theme**. `theme.json` re
 - **HK Grotesk** — WOFF2 in `assets/fonts/hk-grotesk/` (`OFL.txt`). Regular and Bold are preloaded.
 - **Necto Mono** — OTF in `assets/fonts/necto-mono/` (`OFL.txt`); used for highlight headings and citations. It is not preloaded.
 
-Starter page copy for a new chapter is in [docs/starter-copy.md](docs/starter-copy.md). What a chapter fork may change is in [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
+Swedish page copy is in [docs/starter-copy-sv.md](docs/starter-copy-sv.md). The English starter for other chapters is in [docs/starter-copy.md](docs/starter-copy.md). A native speaker on the board should approve the Swedish legal sentences before they go live.
+
+Local preview uses Swedish (`sv_SE`) via `.wp-env.json`. Theme strings come from `languages/okfn-chapter-sv_SE.l10n.php`. Header labels are written in `parts/header.html` and are not translated through gettext.
 
 ## Analytics (Umami)
 

@@ -9,7 +9,7 @@
  * @package OKFN_Chapter
  */
 
-$logo    = get_template_directory_uri() . '/assets/images/lg-okfn-black.svg';
+$logo    = get_template_directory_uri() . '/assets/logos/Landscape/SVG/OKSE-landscape-black-rgb.svg';
 $email   = okfn_chapter_contact_email();
 $socials = '';
 
@@ -42,7 +42,7 @@ foreach ( okfn_chapter_social_links() as $social ) {
 		<!-- wp:column {"width":"30%"} -->
 		<div class="wp-block-column" style="flex-basis:30%">
 			<!-- wp:paragraph -->
-			<p><?php esc_html_e( 'This chapter is an independent non-profit working for a fair, sustainable and open future.', 'okfn-chapter' ); ?></p>
+			<p><?php esc_html_e( 'Open Knowledge Sweden is an independent non-profit working for a fair, sustainable and open future.', 'okfn-chapter' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph -->
 			<p><a href="<?php echo esc_url( 'mailto:' . $email ); ?>"><?php echo esc_html( $email ); ?></a></p>
@@ -54,8 +54,11 @@ foreach ( okfn_chapter_social_links() as $social ) {
 		<div class="wp-block-column" style="flex-basis:70%">
 			<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 			<div class="wp-block-group">
-				<!-- wp:paragraph --><p><a href="<?php echo esc_url( home_url( '/privacy/' ) ); ?>"><?php esc_html_e( 'Privacy policy', 'okfn-chapter' ); ?></a></p><!-- /wp:paragraph -->
-				<!-- wp:paragraph --><p><a href="https://okfn.org/code-of-conduct/"><?php esc_html_e( 'Code of conduct', 'okfn-chapter' ); ?></a></p><!-- /wp:paragraph -->
+				<!-- wp:paragraph --><p><a href="<?php echo esc_url( home_url( '/dataskyddspolicy/' ) ); ?>"><?php esc_html_e( 'Privacy policy', 'okfn-chapter' ); ?></a></p><!-- /wp:paragraph -->
+				<!-- wp:paragraph --><p><a href="<?php echo esc_url( home_url( '/cookie-policy/' ) ); ?>"><?php esc_html_e( 'Cookie policy', 'okfn-chapter' ); ?></a></p><!-- /wp:paragraph -->
+				<!-- wp:paragraph --><p><a href="<?php echo esc_url( home_url( '/om/uppforandekod/' ) ); ?>"><?php esc_html_e( 'Code of conduct', 'okfn-chapter' ); ?></a></p><!-- /wp:paragraph -->
+				<!-- wp:paragraph --><p><a href="<?php echo esc_url( home_url( '/ip-policy/' ) ); ?>"><?php esc_html_e( 'IP policy', 'okfn-chapter' ); ?></a></p><!-- /wp:paragraph -->
+				<!-- wp:paragraph --><p><a href="<?php echo esc_url( home_url( '/om/stadgar/' ) ); ?>"><?php esc_html_e( 'Statutes', 'okfn-chapter' ); ?></a></p><!-- /wp:paragraph -->
 				<!-- wp:paragraph --><p><a href="<?php echo esc_url( okfn_chapter_donate_url() ); ?>"><?php esc_html_e( 'Donate', 'okfn-chapter' ); ?></a></p><!-- /wp:paragraph -->
 				<!-- wp:paragraph --><p><a href="https://okfn.org/network/"><?php esc_html_e( 'Open Knowledge Network', 'okfn-chapter' ); ?></a></p><!-- /wp:paragraph -->
 			</div>

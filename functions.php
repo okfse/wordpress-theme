@@ -15,7 +15,20 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return void
  */
 function okfn_chapter_setup() {
-	load_theme_textdomain( 'okfn-chapter', get_template_directory() . '/languages' );
+	$languages = get_template_directory() . '/languages';
+	load_theme_textdomain( 'okfn-chapter', $languages );
+
+	/*
+	 * Inside a theme, just-in-time loading looks for languages/{locale}.mo.
+	 * These catalogs are named okfn-chapter-{locale}.l10n.php, which is what
+	 * load_textdomain() reads when given the matching .mo path.
+	 */
+	$locale          = determine_locale();
+	$mofile          = $languages . '/okfn-chapter-' . $locale . '.mo';
+	$php_translation = substr( $mofile, 0, -3 ) . '.l10n.php';
+	if ( is_readable( $php_translation ) || is_readable( $mofile ) ) {
+		load_textdomain( 'okfn-chapter', $mofile );
+	}
 
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'editor-styles' );
@@ -152,7 +165,7 @@ function okfn_chapter_register_block_styles() {
 add_action( 'init', 'okfn_chapter_register_block_styles' );
 
 /**
- * Falls back to the bundled OKFN wordmark when no custom logo is set.
+ * Falls back to the Sweden landscape wordmark when no custom logo is set.
  *
  * @param string $html Custom logo HTML.
  * @return string
@@ -162,7 +175,7 @@ function okfn_chapter_default_logo( $html ) {
 		return $html;
 	}
 
-	$src = get_template_directory_uri() . '/assets/images/lg-okfn.svg';
+	$src = get_template_directory_uri() . '/assets/logos/Landscape/SVG/OKSE-landscape-full-rgb.svg';
 
 	return sprintf(
 		'<a href="%1$s" class="custom-logo-link" rel="home"><img src="%2$s" class="custom-logo" alt="%3$s" width="180" height="51"/></a>',
@@ -172,6 +185,23 @@ function okfn_chapter_default_logo( $html ) {
 	);
 }
 add_filter( 'get_custom_logo', 'okfn_chapter_default_logo' );
+
+/**
+ * Prints the Sweden favicon unless a Site Icon is set.
+ *
+ * @return void
+ */
+function okfn_chapter_favicon() {
+	if ( has_site_icon() ) {
+		return;
+	}
+
+	printf(
+		'<link rel="icon" href="%s" sizes="any" />' . "\n",
+		esc_url( get_template_directory_uri() . '/assets/images/favicon.ico' )
+	);
+}
+add_action( 'wp_head', 'okfn_chapter_favicon', 2 );
 
 /**
  * Chapter contact address. Chapters replace the example via the filter.
@@ -367,7 +397,7 @@ function okfn_chapter_schema_json_ld() {
 	$custom_logo_id = get_theme_mod( 'custom_logo' );
 	$logo_url       = $custom_logo_id ? wp_get_attachment_image_url( $custom_logo_id, 'full' ) : '';
 	if ( ! $logo_url ) {
-		$logo_url = get_template_directory_uri() . '/assets/images/lg-okfn.svg';
+		$logo_url = get_template_directory_uri() . '/assets/logos/Landscape/SVG/OKSE-landscape-full-rgb.svg';
 	}
 	$org_schema['logo'] = array(
 		'@type' => 'ImageObject',
@@ -465,3 +495,64 @@ function okfn_chapter_hreflang_tags() {
 	}
 }
 add_action( 'wp_head', 'okfn_chapter_hreflang_tags', 2 );
+
+/**
+ * Sweden contact address.
+ *
+ * @return string
+ */
+function okfn_chapter_sweden_contact_email() {
+	return 'contact@okfn.se';
+}
+add_filter( 'okfn_chapter_contact_email', 'okfn_chapter_sweden_contact_email' );
+
+/**
+ * Social profiles used on okfn.se.
+ *
+ * Confirm this set before cutover. The Sweden page on okfn.org still lists older URLs.
+ *
+ * @return array<int, array{service: string, url: string}>
+ */
+function okfn_chapter_sweden_social_links() {
+	return array(
+		array(
+			'service' => 'mastodon',
+			'url'     => 'https://mastodon.nu/@okfse',
+		),
+		array(
+			'service' => 'github',
+			'url'     => 'https://github.com/okfse',
+		),
+		array(
+			'service' => 'linkedin',
+			'url'     => 'https://www.linkedin.com/company/open-knowledge-sweden/',
+		),
+		array(
+			'service' => 'x',
+			'url'     => 'https://x.com/okfse',
+		),
+	);
+}
+add_filter( 'okfn_chapter_social_links', 'okfn_chapter_sweden_social_links' );
+
+/**
+ * Sweden donate page.
+ *
+ * @return string
+ */
+function okfn_chapter_sweden_donate_url() {
+	return home_url( '/donera/' );
+}
+add_filter( 'okfn_chapter_donate_url', 'okfn_chapter_sweden_donate_url' );
+
+/**
+ * Newsletter button until Sweden has its own list.
+ *
+ * Editors replace this with the list URL. Do not point it at the Foundation list.
+ *
+ * @return string
+ */
+function okfn_chapter_sweden_newsletter_url() {
+	return home_url( '/kontakt/' );
+}
+add_filter( 'okfn_chapter_newsletter_url', 'okfn_chapter_sweden_newsletter_url' );

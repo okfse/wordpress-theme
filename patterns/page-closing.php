@@ -18,7 +18,7 @@
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 	<div class="wp-block-buttons">
 		<!-- wp:button -->
-		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( okfn_chapter_donate_url() ); ?>"><?php esc_html_e( 'Donate', 'okfn-chapter' ); ?></a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( okfn_chapter_donate_url() ); ?>"><?php esc_html_e( 'Donate now', 'okfn-chapter' ); ?></a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->

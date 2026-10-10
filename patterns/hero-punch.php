@@ -8,7 +8,7 @@
  * @package OKFN_Chapter
  */
 
-$image = get_template_directory_uri() . '/assets/images/lg-okfn.svg';
+$image = get_template_directory_uri() . '/assets/logos/No text/SVG/OK-notext-full.svg';
 ?>
 <!-- wp:group {"metadata":{"name":"Hero punch"},"className":"okfn-hero is-style-orb-blue has-bg-circle orb-lg","align":"wide","layout":{"type":"constrained","contentSize":"84rem"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-group alignwide okfn-hero is-style-orb-blue has-bg-circle orb-lg" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70)">
@@ -21,13 +21,17 @@ $image = get_template_directory_uri() . '/assets/images/lg-okfn.svg';
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"fontSize":"okfn-lg"} -->
-			<p class="has-okfn-lg-font-size"><?php esc_html_e( 'We believe knowledge should be accessible to everyone. This chapter advances open content, data, and technology in its own country, together with the Open Knowledge Network.', 'okfn-chapter' ); ?></p>
+			<p class="has-okfn-lg-font-size"><?php esc_html_e( 'We believe knowledge should be accessible to everyone. Open Knowledge Sweden advances open content, data, and technology in Sweden, together with the Open Knowledge Network.', 'okfn-chapter' ); ?></p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:paragraph -->
+			<p><?php esc_html_e( 'We work for a more open digital Sweden, where non-sensitive information is open and free to use, build on, and share.', 'okfn-chapter' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button -->
-				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'Who we are', 'okfn-chapter' ); ?></a></div>
+				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/om/' ) ); ?>"><?php esc_html_e( 'Our mission', 'okfn-chapter' ); ?></a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -37,7 +41,7 @@ $image = get_template_directory_uri() . '/assets/images/lg-okfn.svg';
 		<!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%">
 			<!-- wp:image {"sizeSlug":"full"} -->
-			<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $image ); ?>" alt="" width="320" height="91"/></figure>
+			<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr__( 'Open Knowledge Sweden', 'okfn-chapter' ); ?>" width="180" height="195"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

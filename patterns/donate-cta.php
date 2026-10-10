@@ -16,7 +16,7 @@
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","fontSize":"large","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}}} -->
-	<p class="has-text-align-center has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--50)"><?php esc_html_e( 'Money given here funds this chapter.', 'okfn-chapter' ); ?></p>
+	<p class="has-text-align-center has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--50)"><?php esc_html_e( 'Gifts go to Open Knowledge Sweden, organisation number 802494-0937.', 'okfn-chapter' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:group {"className":"okfn-donate-box","layout":{"type":"constrained"}} -->

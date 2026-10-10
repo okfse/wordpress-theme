@@ -45,103 +45,112 @@ msgid "Comments"
 msgstr "Kommentarer"
 
 msgid "Support a fair, sustainable, and open future."
-msgstr ""
+msgstr "Stöd en rättvis, hållbar och öppen framtid."
 
-msgid "Money given here funds this chapter."
-msgstr ""
+msgid "Gifts go to Open Knowledge Sweden, organisation number 802494-0937."
+msgstr "Gåvor går till Open Knowledge Sweden, organisationsnummer 802494-0937."
 
 msgid "Donate"
 msgstr "Donera"
 
 msgid "Events"
-msgstr ""
+msgstr "Evenemang"
 
 msgid "Example only. Not a scheduled event."
-msgstr ""
+msgstr "Endast ett exempel. Inte ett inplanerat evenemang."
 
 msgid "DD"
-msgstr ""
+msgstr "DD"
 
 msgid "Mon"
-msgstr ""
+msgstr "mån"
 
 msgid "Example meetup"
-msgstr ""
+msgstr "Exempelträff"
 
 msgid "Add a time and a place."
-msgstr ""
+msgstr "Lägg till tid och plats."
 
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "Vanliga frågor"
 
 msgid "Short answers editors can rewrite for this chapter."
-msgstr ""
+msgstr "Korta svar som redaktörer kan skriva om för det här kapitlet."
 
 msgid "What is open knowledge?"
-msgstr ""
+msgstr "Vad är öppen kunskap?"
 
 msgid "Open knowledge is content, information, or data that people are free to use, reuse, and share, without legal, technical, or social restrictions."
-msgstr ""
+msgstr "Öppen kunskap är innehåll, information eller data som människor fritt kan använda, återanvända och dela, utan juridiska, tekniska eller sociala hinder."
 
 msgid "How is this chapter related to the Open Knowledge Foundation?"
-msgstr ""
+msgstr "Hur förhåller sig det här kapitlet till Open Knowledge Foundation?"
 
 msgid "This chapter is an independent non-profit in the Open Knowledge Network. The Open Knowledge Foundation is a separate organisation. It maintains shared tools and supports the network."
-msgstr ""
+msgstr "Det här kapitlet är en självständig ideell organisation i Open Knowledge-nätverket. Open Knowledge Foundation är en separat organisation. Den förvaltar gemensamma verktyg och stödjer nätverket."
 
 msgid "How do I take part?"
-msgstr ""
+msgstr "Hur går jag med?"
 
 msgid "No special background is required. Come to a meetup, help with a project, or write to the chapter. People starting out in a country with no chapter write to network@okfn.org."
-msgstr ""
+msgstr "Inga särskilda förkunskaper krävs. Kom på en träff, hjälp till i ett projekt eller skriv till kapitlet. Den som vill starta i ett land utan kapitel skriver till network@okfn.org."
 
 msgid "How we work"
 msgstr "Så arbetar vi"
 
 msgid "We include people"
-msgstr ""
+msgstr "Vi inkluderar fler"
 
 msgid "Meetings, training, and advocacy."
-msgstr ""
+msgstr "Möten, utbildning och påverkan."
 
 msgid "Get involved"
 msgstr "Engagera dig"
 
 msgid "We build local capacity"
-msgstr ""
+msgstr "Vi bygger kunskap här"
 
-msgid "Research, policy, and practical help with open data."
-msgstr ""
+msgid "We help organisations with research, policy, and practical work on open data."
+msgstr "Vi hjälper organisationer med research, policy och praktiskt arbete med öppna data."
 
 msgid "Contact us"
 msgstr "Kontakta oss"
 
 msgid "We are part of a network"
-msgstr ""
+msgstr "Vi är en del av nätverket"
 
 msgid "Groups in more than 40 countries share tools and experience."
-msgstr ""
+msgstr "Grupper i fler än 40 länder delar verktyg och erfarenheter."
 
 msgid "The Network"
-msgstr ""
+msgstr "Nätverket"
 
-msgid "This chapter is an independent non-profit working for a fair, sustainable and open future."
-msgstr ""
+msgid "Open Knowledge Sweden is an independent non-profit working for a fair, sustainable and open future."
+msgstr "Open Knowledge Sweden är en ideell förening som arbetar för en rättvis, hållbar och öppen framtid."
 
 msgid "Privacy policy"
 msgstr "Integritetspolicy"
 
+msgid "Cookie policy"
+msgstr "Cookiepolicy"
+
 msgid "Code of conduct"
 msgstr "Uppförandekod"
+
+msgid "IP policy"
+msgstr "IP-policy"
+
+msgid "Statutes"
+msgstr "Stadgar"
 
 msgid "Open Knowledge Network"
 msgstr "Open Knowledge-nätverket"
 
 msgid "Theme code is available under the <a href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General Public License v2.0 or later</a>."
-msgstr ""
+msgstr "Temats kod är tillgänglig under <a href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General Public License version 2.0 eller senare</a>."
 
 msgid "Content on this site is licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>."
 msgstr "Innehåll på den här webbplatsen licensieras under en <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Erkännande 4.0 Internationell licens</a>."
@@ -150,13 +159,19 @@ msgid "Open knowledge can be created and applied in many ways."
 msgstr "Öppen kunskap kan skapas och tillämpas på många sätt."
 
 msgid "Openness is our foundation."
-msgstr ""
+msgstr "Öppenhet är vår grund."
 
-msgid "We believe knowledge should be accessible to everyone. This chapter advances open content, data, and technology in its own country, together with the Open Knowledge Network."
-msgstr ""
+msgid "We believe knowledge should be accessible to everyone. Open Knowledge Sweden advances open content, data, and technology in Sweden, together with the Open Knowledge Network."
+msgstr "Vi tror att kunskap ska vara tillgänglig för alla. Open Knowledge Sweden verkar för öppet innehåll, öppna data och öppen teknik i Sverige, tillsammans med Open Knowledge-nätverket."
 
-msgid "Who we are"
-msgstr "Vilka vi är"
+msgid "We work for a more open digital Sweden, where non-sensitive information is open and free to use, build on, and share."
+msgstr "Vi arbetar för ett mer öppet digitalt Sverige, där icke-känslig information är öppen och fri att använda, bygga vidare på och dela."
+
+msgid "Our mission"
+msgstr "Vårt uppdrag"
+
+msgid "Open Knowledge Sweden"
+msgstr "Open Knowledge Sweden"
 
 msgid "Page not found"
 msgstr "Sidan hittades inte"
@@ -170,11 +185,8 @@ msgstr "Till startsidan"
 msgid "No posts were found. Try a different search or browse the latest posts from the blog."
 msgstr "Inga inlägg hittades. Prova en annan sökning eller bläddra bland de senaste inläggen."
 
-msgid "Example language switcher"
-msgstr ""
-
-msgid "Add language"
-msgstr ""
+msgid "Language"
+msgstr "Språk"
 
 msgid "Latest posts"
 msgstr "Senaste inläggen"
@@ -186,10 +198,10 @@ msgid "More posts"
 msgstr "Fler inlägg"
 
 msgid "Don't miss<br>a thing"
-msgstr "Missa inte<br>någonting"
+msgstr "Missa inget"
 
 msgid "Stay on top of what is happening in the open movement."
-msgstr ""
+msgstr "Följ vad som händer i den öppna rörelsen."
 
 msgid "Subscribe"
 msgstr "Prenumerera"
@@ -210,7 +222,13 @@ msgid "BY 4.0 by default"
 msgstr "BY 4.0 som standard"
 
 msgid "Let’s build a world where knowledge is accessible to everyone."
-msgstr ""
+msgstr "Låt oss bygga en värld där kunskap är tillgänglig för alla."
+
+msgid "Donate now"
+msgstr "Donera nu"
+
+msgid "Who we are"
+msgstr "Vilka vi är"
 
 msgid "A local chapter of the Open Knowledge Network, working in the open for public good."
 msgstr "Ett lokalt kapitel i Open Knowledge-nätverket som arbetar öppet för allmännyttan."
@@ -231,55 +249,55 @@ msgid "Website"
 msgstr "Webbplats"
 
 msgid "Our Projects & Initiatives"
-msgstr ""
+msgstr "Våra projekt och initiativ"
 
 msgid "Replace these cards with the projects this chapter actually runs."
-msgstr ""
+msgstr "Byt ut de här korten mot projekt som kapitlet faktiskt driver."
 
 msgid "Example"
-msgstr ""
+msgstr "Exempel"
 
 msgid "Example project"
-msgstr ""
+msgstr "Exempelprojekt"
 
 msgid "One sentence about a real project. Delete this card if you have nothing to list yet."
-msgstr ""
+msgstr "En mening om ett verkligt projekt. Ta bort kortet om du inte har något att lista ännu."
 
 msgid "View project"
-msgstr ""
+msgstr "Visa projekt"
 
 msgid "Learn more"
-msgstr ""
+msgstr "Läs mer om"
 
 msgid "Read case study"
-msgstr ""
+msgstr "Läs fallstudien"
 
 msgid "We believe open knowledge can empower everyone."
 msgstr "Vi tror att öppen kunskap kan stärka alla."
 
 msgid "Global challenges"
-msgstr ""
+msgstr "Globala utmaningar"
 
 msgid "Open information helps people understand shared problems and see what is working."
-msgstr ""
+msgstr "Öppen information hjälper människor att förstå gemensamma problem och se vad som fungerar."
 
 msgid "Democratic accountability"
-msgstr ""
+msgstr "Medborgare och demokratisk insyn"
 
 msgid "People need access to information about how public institutions work."
-msgstr ""
+msgstr "Människor behöver tillgång till information om hur offentliga institutioner fungerar."
 
 msgid "Research, science, and culture"
-msgstr ""
+msgstr "Forskning, vetenskap och kultur"
 
 msgid "Knowledge people can use, reuse, and share."
-msgstr ""
+msgstr "Kunskap som människor kan använda, återanvända och dela."
 
 msgid "Consumers and corporate accountability"
-msgstr ""
+msgstr "Konsumenter och företags ansvar"
 
 msgid "Information about who controls organisations, products, and services."
-msgstr ""
+msgstr "Information om vem som kontrollerar organisationer, produkter och tjänster."
 
 msgid "Where open knowledge matters"
-msgstr ""
+msgstr "Där öppen kunskap gör skillnad"

@@ -28,7 +28,7 @@
 				<p><?php esc_html_e( 'Meetings, training, and advocacy.', 'okfn-chapter' ); ?></p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph -->
-				<p><a class="link-arrow-curved" href="<?php echo esc_url( home_url( '/get-involved/' ) ); ?>"><?php esc_html_e( 'Get involved', 'okfn-chapter' ); ?></a></p>
+				<p><a class="link-arrow-curved" href="<?php echo esc_url( home_url( '/engagera-dig/' ) ); ?>"><?php esc_html_e( 'Get involved', 'okfn-chapter' ); ?></a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -43,10 +43,10 @@
 				<h3 class="wp-block-heading"><?php esc_html_e( 'We build local capacity', 'okfn-chapter' ); ?></h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph -->
-				<p><?php esc_html_e( 'Research, policy, and practical help with open data.', 'okfn-chapter' ); ?></p>
+				<p><?php esc_html_e( 'We help organisations with research, policy, and practical work on open data.', 'okfn-chapter' ); ?></p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph -->
-				<p><a class="link-arrow-curved" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Contact us', 'okfn-chapter' ); ?></a></p>
+				<p><a class="link-arrow-curved" href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>"><?php esc_html_e( 'Contact us', 'okfn-chapter' ); ?></a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -64,7 +64,7 @@
 				<p><?php esc_html_e( 'Groups in more than 40 countries share tools and experience.', 'okfn-chapter' ); ?></p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph -->
-				<p><a class="link-arrow-curved" href="<?php echo esc_url( home_url( '/network/' ) ); ?>"><?php esc_html_e( 'The Network', 'okfn-chapter' ); ?></a></p>
+				<p><a class="link-arrow-curved" href="<?php echo esc_url( 'https://okfn.org/network/' ); ?>"><?php esc_html_e( 'The Network', 'okfn-chapter' ); ?></a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

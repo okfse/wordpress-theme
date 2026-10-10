@@ -47,8 +47,8 @@ msgstr "Comentarios"
 msgid "Support a fair, sustainable, and open future."
 msgstr "Apoya un futuro justo, sostenible y abierto."
 
-msgid "Money given here funds this chapter."
-msgstr "El dinero que se dona aquí financia este capítulo."
+msgid "Gifts go to Open Knowledge Sweden, organisation number 802494-0937."
+msgstr "Las donaciones van a Open Knowledge Sweden, número de organización 802494-0937."
 
 msgid "Donate"
 msgstr "Donar"
@@ -113,8 +113,8 @@ msgstr "Participa"
 msgid "We build local capacity"
 msgstr "Construimos capacidad local"
 
-msgid "Research, policy, and practical help with open data."
-msgstr "Investigación, políticas y ayuda práctica con datos abiertos."
+msgid "We help organisations with research, policy, and practical work on open data."
+msgstr "Ayudamos a las organizaciones con investigación, políticas y trabajo práctico sobre datos abiertos."
 
 msgid "Contact us"
 msgstr "Contáctanos"
@@ -128,14 +128,23 @@ msgstr "Grupos en más de 40 países comparten herramientas y experiencia."
 msgid "The Network"
 msgstr "La red"
 
-msgid "This chapter is an independent non-profit working for a fair, sustainable and open future."
-msgstr "Este capítulo es una organización independiente sin ánimo de lucro que trabaja por un futuro justo, sostenible y abierto."
+msgid "Open Knowledge Sweden is an independent non-profit working for a fair, sustainable and open future."
+msgstr "Open Knowledge Sweden es una organización independiente sin ánimo de lucro que trabaja por un futuro justo, sostenible y abierto."
 
 msgid "Privacy policy"
 msgstr "Política de privacidad"
 
+msgid "Cookie policy"
+msgstr "Política de cookies"
+
 msgid "Code of conduct"
 msgstr "Código de conducta"
+
+msgid "IP policy"
+msgstr "Política de propiedad intelectual"
+
+msgid "Statutes"
+msgstr "Estatutos"
 
 msgid "Open Knowledge Network"
 msgstr "Red Open Knowledge"
@@ -152,11 +161,17 @@ msgstr "El conocimiento abierto se puede crear y aplicar de muchas maneras."
 msgid "Openness is our foundation."
 msgstr "La apertura es nuestra base."
 
-msgid "We believe knowledge should be accessible to everyone. This chapter advances open content, data, and technology in its own country, together with the Open Knowledge Network."
-msgstr "Creemos que el conocimiento debe ser accesible para todas las personas. Este capítulo impulsa el contenido, los datos y la tecnología abiertos en su país, junto con la red Open Knowledge."
+msgid "We believe knowledge should be accessible to everyone. Open Knowledge Sweden advances open content, data, and technology in Sweden, together with the Open Knowledge Network."
+msgstr "Creemos que el conocimiento debe ser accesible para todas las personas. Open Knowledge Sweden impulsa el contenido abierto, los datos abiertos y la tecnología abierta en Suecia, junto con la red Open Knowledge."
 
-msgid "Who we are"
-msgstr "Quiénes somos"
+msgid "We work for a more open digital Sweden, where non-sensitive information is open and free to use, build on, and share."
+msgstr "Trabajamos por una Suecia digital más abierta, en la que la información no sensible sea abierta y libre de usar, desarrollar y compartir."
+
+msgid "Our mission"
+msgstr "Nuestra misión"
+
+msgid "Open Knowledge Sweden"
+msgstr "Open Knowledge Sweden"
 
 msgid "Page not found"
 msgstr "Página no encontrada"
@@ -170,11 +185,8 @@ msgstr "Volver al inicio"
 msgid "No posts were found. Try a different search or browse the latest posts from the blog."
 msgstr "No se encontraron publicaciones. Intente una búsqueda diferente o explore las publicaciones del blog."
 
-msgid "Example language switcher"
-msgstr "Ejemplo de selector de idioma"
-
-msgid "Add language"
-msgstr "Añadir idioma"
+msgid "Language"
+msgstr "Idioma"
 
 msgid "Latest posts"
 msgstr "Últimas publicaciones"
@@ -210,7 +222,13 @@ msgid "BY 4.0 by default"
 msgstr "BY 4.0 por defecto"
 
 msgid "Let’s build a world where knowledge is accessible to everyone."
-msgstr "Construyamos un mundo donde el conocimiento sea accesible para todas las personas."
+msgstr "Construyamos un mundo en el que el conocimiento sea accesible para todas las personas."
+
+msgid "Donate now"
+msgstr "Donar ahora"
+
+msgid "Who we are"
+msgstr "Quiénes somos"
 
 msgid "A local chapter of the Open Knowledge Network, working in the open for public good."
 msgstr "Un capítulo local de la Red Open Knowledge, trabajando en abierto por el bien común."
