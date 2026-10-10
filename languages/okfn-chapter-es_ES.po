@@ -2,10 +2,10 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: OK Network Chapter 3.0.0\n"
+"Project-Id-Version: OK Network Chapter 3.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/okfse/wordpress-theme\n"
-"POT-Creation-Date: 2026-08-24\n"
-"PO-Revision-Date: 2026-08-24\n"
+"POT-Creation-Date: 2026-10-10\n"
+"PO-Revision-Date: 2026-10-10\n"
 "Last-Translator: Open Knowledge Network\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -41,59 +41,140 @@ msgstr "Orbe púrpura"
 msgid "Yellow orb"
 msgstr "Orbe amarillo"
 
-msgid "A fair, free and <strong>open</strong> future."
-msgstr "Un futuro justo, libre y <strong>abierto</strong>."
+msgid "Comments"
+msgstr "Comentarios"
 
-msgid "We work for a more open digital society — where non-sensitive information is open, free to use, build on and share."
-msgstr "Trabajamos por una sociedad digital más abierta, donde la información no sensible sea abierta, libre de usar, desarrollar y compartir."
+msgid "Support a fair, sustainable, and open future."
+msgstr "Apoya un futuro justo, sostenible y abierto."
 
-msgid "Our mission"
-msgstr "Nuestra misión"
+msgid "Money given here funds this chapter."
+msgstr "El dinero que se dona aquí financia este capítulo."
 
-msgid "Who we are"
-msgstr "Quiénes somos"
+msgid "Donate"
+msgstr "Donar"
 
-msgid "A local chapter of the Open Knowledge Network, working in the open for public good."
-msgstr "Un capítulo local de la Red Open Knowledge, trabajando en abierto por el bien común."
+msgid "Events"
+msgstr "Eventos"
 
-msgid "Open knowledge can be created and applied in many ways."
-msgstr "El conocimiento abierto se puede crear y aplicar de muchas maneras."
+msgid "Example only. Not a scheduled event."
+msgstr "Solo un ejemplo. No es un evento programado."
+
+msgid "DD"
+msgstr "DD"
+
+msgid "Mon"
+msgstr "Mes"
+
+msgid "Example meetup"
+msgstr "Encuentro de ejemplo"
+
+msgid "Add a time and a place."
+msgstr "Añade una hora y un lugar."
+
+msgid "Contact"
+msgstr "Contacto"
+
+msgid "Frequently Asked Questions"
+msgstr "Preguntas frecuentes"
+
+msgid "Short answers editors can rewrite for this chapter."
+msgstr "Respuestas breves que el equipo puede reescribir para este capítulo."
+
+msgid "What is open knowledge?"
+msgstr "¿Qué es el conocimiento abierto?"
+
+msgid "Open knowledge is content, information, or data that people are free to use, reuse, and share, without legal, technical, or social restrictions."
+msgstr "El conocimiento abierto es contenido, información o datos que las personas pueden usar, reutilizar y compartir, sin restricciones legales, técnicas o sociales."
+
+msgid "How is this chapter related to the Open Knowledge Foundation?"
+msgstr "¿Qué relación tiene este capítulo con la Open Knowledge Foundation?"
+
+msgid "This chapter is an independent non-profit in the Open Knowledge Network. The Open Knowledge Foundation is a separate organisation. It maintains shared tools and supports the network."
+msgstr "Este capítulo es una organización sin ánimo de lucro independiente dentro de la red Open Knowledge. La Open Knowledge Foundation es una organización aparte. Mantiene herramientas compartidas y apoya a la red."
+
+msgid "How do I take part?"
+msgstr "¿Cómo participo?"
+
+msgid "No special background is required. Come to a meetup, help with a project, or write to the chapter. People starting out in a country with no chapter write to network@okfn.org."
+msgstr "No hace falta una formación especial. Ven a un encuentro, ayuda en un proyecto o escribe al capítulo. Quien empiece en un país sin capítulo escribe a network@okfn.org."
 
 msgid "How we work"
 msgstr "Cómo trabajamos"
 
-msgid "A global network"
-msgstr "Una red global"
+msgid "We include people"
+msgstr "Incluimos a las personas"
 
-msgid "Meetings, training, innovation, sharing and research: join us in opening knowledge for everyone."
-msgstr "Reuniones, formación, innovación, intercambio e investigación: únete a nosotros para abrir el conocimiento para todos."
+msgid "Meetings, training, and advocacy."
+msgstr "Encuentros, formación y defensa."
 
 msgid "Get involved"
 msgstr "Participa"
 
-msgid "Open expertise"
-msgstr "Experiencia abierta"
+msgid "We build local capacity"
+msgstr "Construimos capacidad local"
 
-msgid "We help partners with research, policy and technical work on open data and public information."
-msgstr "Ayudamos a nuestros socios con investigación, políticas y trabajo técnico sobre datos abiertos e información pública."
+msgid "Research, policy, and practical help with open data."
+msgstr "Investigación, políticas y ayuda práctica con datos abiertos."
 
 msgid "Contact us"
 msgstr "Contáctanos"
 
-msgid "Open data"
-msgstr "Datos abiertos"
+msgid "We are part of a network"
+msgstr "Somos parte de una red"
 
-msgid "Democracy, science, culture and markets all work better when information is open by default."
-msgstr "La democracia, la ciencia, la cultura y los mercados funcionan mejor cuando la información es abierta por defecto."
+msgid "Groups in more than 40 countries share tools and experience."
+msgstr "Grupos en más de 40 países comparten herramientas y experiencia."
 
-msgid "Why open data"
-msgstr "Por qué datos abiertos"
+msgid "The Network"
+msgstr "La red"
 
-msgid "Read more"
-msgstr "Leer más"
+msgid "This chapter is an independent non-profit working for a fair, sustainable and open future."
+msgstr "Este capítulo es una organización independiente sin ánimo de lucro que trabaja por un futuro justo, sostenible y abierto."
 
-msgid "Website"
-msgstr "Sitio web"
+msgid "Privacy policy"
+msgstr "Política de privacidad"
+
+msgid "Code of conduct"
+msgstr "Código de conducta"
+
+msgid "Open Knowledge Network"
+msgstr "Red Open Knowledge"
+
+msgid "Theme code is available under the <a href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General Public License v2.0 or later</a>."
+msgstr "El código del tema está disponible bajo la <a href=\"https://www.gnu.org/licenses/gpl-2.0.html\">Licencia Pública General de GNU v2.0 o posterior</a>."
+
+msgid "Content on this site is licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>."
+msgstr "El contenido de este sitio está bajo una <a href=\"https://creativecommons.org/licenses/by/4.0/\">Licencia Creative Commons Atribución 4.0 Internacional</a>."
+
+msgid "Open knowledge can be created and applied in many ways."
+msgstr "El conocimiento abierto se puede crear y aplicar de muchas maneras."
+
+msgid "Openness is our foundation."
+msgstr "La apertura es nuestra base."
+
+msgid "We believe knowledge should be accessible to everyone. This chapter advances open content, data, and technology in its own country, together with the Open Knowledge Network."
+msgstr "Creemos que el conocimiento debe ser accesible para todas las personas. Este capítulo impulsa el contenido, los datos y la tecnología abiertos en su país, junto con la red Open Knowledge."
+
+msgid "Who we are"
+msgstr "Quiénes somos"
+
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+msgid "The page you are looking for does not exist or has been moved."
+msgstr "La página que busca no existe o ha sido movida."
+
+msgid "Back home"
+msgstr "Volver al inicio"
+
+msgid "No posts were found. Try a different search or browse the latest posts from the blog."
+msgstr "No se encontraron publicaciones. Intente una búsqueda diferente o explore las publicaciones del blog."
+
+msgid "Example language switcher"
+msgstr "Ejemplo de selector de idioma"
+
+msgid "Add language"
+msgstr "Añadir idioma"
 
 msgid "Latest posts"
 msgstr "Últimas publicaciones"
@@ -104,20 +185,14 @@ msgstr "No se encontraron publicaciones."
 msgid "More posts"
 msgstr "Más publicaciones"
 
-msgid "Name"
-msgstr "Nombre"
+msgid "Don't miss<br>a thing"
+msgstr "No te pierdas<br>nada"
 
-msgid "Role"
-msgstr "Cargo"
+msgid "Stay on top of what is happening in the open movement."
+msgstr "Mantente al día de lo que ocurre en el movimiento abierto."
 
-msgid "Short biography. Replace this text, the photo, and the contact details in the Site Editor."
-msgstr "Biografía breve. Reemplace este texto, la foto y los detalles de contacto en el Editor del sitio."
-
-msgid "We believe open knowledge can empower everyone."
-msgstr "Creemos que el conocimiento abierto puede empoderar a todos."
-
-msgid "Open Knowledge Network"
-msgstr "Red Open Knowledge"
+msgid "Subscribe"
+msgstr "Suscribirse"
 
 msgid "Impact"
 msgstr "Impacto"
@@ -134,62 +209,77 @@ msgstr "Red global"
 msgid "BY 4.0 by default"
 msgstr "BY 4.0 por defecto"
 
-msgid "Don't miss<br>a thing"
-msgstr "No te pierdas<br>nada"
+msgid "Let’s build a world where knowledge is accessible to everyone."
+msgstr "Construyamos un mundo donde el conocimiento sea accesible para todas las personas."
 
-msgid "Stay on top of what is happening in the open movement. We will never spam you."
-msgstr "Mantente al tanto de lo que sucede en el movimiento abierto. Nunca te enviaremos correo no deseado."
+msgid "A local chapter of the Open Knowledge Network, working in the open for public good."
+msgstr "Un capítulo local de la Red Open Knowledge, trabajando en abierto por el bien común."
 
-msgid "Subscribe"
-msgstr "Suscribirse"
+msgid "Name"
+msgstr "Nombre"
 
-msgid "Support a fair, free and <strong>open</strong> future."
-msgstr "Apoya un futuro justo, libre y <strong>abierto</strong>."
+msgid "Role"
+msgstr "Cargo"
 
-msgid "Donate now"
-msgstr "Donar ahora"
+msgid "Short biography. Replace this text, the photo, and the contact details in the Site Editor."
+msgstr "Biografía breve. Reemplace este texto, la foto y los detalles de contacto en el Editor del sitio."
 
-msgid "Open Knowledge Sweden is a non-profit organisation working for a fair, free and open future."
-msgstr "Open Knowledge es una organización sin fines de lucro que trabaja por un futuro justo, libre y abierto."
+msgid "Read more"
+msgstr "Leer más"
 
-msgid "Privacy policy"
-msgstr "Política de privacidad"
+msgid "Website"
+msgstr "Sitio web"
 
-msgid "Cookie policy"
-msgstr "Política de cookies"
+msgid "Our Projects & Initiatives"
+msgstr "Nuestros proyectos e iniciativas"
 
-msgid "Code of conduct"
-msgstr "Código de conducta"
+msgid "Replace these cards with the projects this chapter actually runs."
+msgstr "Sustituye estas tarjetas por los proyectos que este capítulo realmente lleva."
 
-msgid "IP policy"
-msgstr "Política de propiedad intelectual"
+msgid "Example"
+msgstr "Ejemplo"
 
-msgid "Statutes"
-msgstr "Estatutos"
+msgid "Example project"
+msgstr "Proyecto de ejemplo"
 
-msgid "Donate"
-msgstr "Donar"
+msgid "One sentence about a real project. Delete this card if you have nothing to list yet."
+msgstr "Una frase sobre un proyecto real. Borra esta tarjeta si todavía no hay nada que mostrar."
 
-msgid "Forum"
-msgstr "Foro"
+msgid "View project"
+msgstr "Ver el proyecto"
 
-msgid "Source code available under the MIT license."
-msgstr "Código fuente disponible bajo la licencia MIT."
+msgid "Learn more"
+msgstr "Más información"
 
-msgid "Content on this site is licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>."
-msgstr "El contenido de este sitio está bajo una <a href=\"https://creativecommons.org/licenses/by/4.0/\">Licencia Creative Commons Atribución 4.0 Internacional</a>."
+msgid "Read case study"
+msgstr "Leer el caso"
 
-msgid "Page not found"
-msgstr "Página no encontrada"
+msgid "We believe open knowledge can empower everyone."
+msgstr "Creemos que el conocimiento abierto puede empoderar a todos."
 
-msgid "The page you are looking for does not exist or has been moved."
-msgstr "La página que busca no existe o ha sido movida."
+msgid "Global challenges"
+msgstr "Desafíos globales"
 
-msgid "Back home"
-msgstr "Volver al inicio"
+msgid "Open information helps people understand shared problems and see what is working."
+msgstr "La información abierta ayuda a entender problemas compartidos y a ver qué está funcionando."
 
-msgid "No posts were found. Try a different search or browse the latest posts from the blog."
-msgstr "No se encontraron publicaciones. Intente una búsqueda diferente o explore las publicaciones del blog."
+msgid "Democratic accountability"
+msgstr "Rendición de cuentas democrática"
 
-msgid "Comments"
-msgstr "Comentarios"
+msgid "People need access to information about how public institutions work."
+msgstr "Las personas necesitan acceso a información sobre cómo funcionan las instituciones públicas."
+
+msgid "Research, science, and culture"
+msgstr "Investigación, ciencia y cultura"
+
+msgid "Knowledge people can use, reuse, and share."
+msgstr "Conocimiento que las personas pueden usar, reutilizar y compartir."
+
+msgid "Consumers and corporate accountability"
+msgstr "Consumidores y responsabilidad empresarial"
+
+msgid "Information about who controls organisations, products, and services."
+msgstr "Información sobre quién controla organizaciones, productos y servicios."
+
+msgid "Where open knowledge matters"
+msgstr "Dónde importa el conocimiento abierto"

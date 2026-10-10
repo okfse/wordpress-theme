@@ -56,10 +56,12 @@ Do not install a page builder. Layout lives in patterns; you change text, images
 
 ## Fonts
 
-Both faces are **SIL OFL 1.1** and **self-hosted in the theme**. `styles/fonts.css` registers them with local `@font-face` URLs. Nothing is loaded from Google Fonts or any other remote host.
+Both faces are **SIL OFL 1.1** and **self-hosted in the theme**. `theme.json` registers them once. Nothing is loaded from Google Fonts or any other remote host.
 
-- **HK Grotesk** — WOFF2 in `assets/fonts/hk-grotesk/` (`OFL.txt`)
-- **Necto Mono** — OTF in `assets/fonts/necto-mono/` (`OFL.txt`); used for highlight headings and citations
+- **HK Grotesk** — WOFF2 in `assets/fonts/hk-grotesk/` (`OFL.txt`). Regular and Bold are preloaded.
+- **Necto Mono** — OTF in `assets/fonts/necto-mono/` (`OFL.txt`); used for highlight headings and citations. It is not preloaded.
+
+Starter page copy for a new chapter is in [docs/starter-copy.md](docs/starter-copy.md). What a chapter fork may change is in [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
 
 ## Analytics (Umami)
 

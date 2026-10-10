@@ -7,6 +7,7 @@
  *
  * @package OKFN_Chapter
  */
+
 ?>
 <!-- wp:group {"metadata":{"name":"Person card"},"className":"okfn-person-card okfn-tighten","layout":{"type":"constrained"}} -->
 <div class="wp-block-group okfn-person-card okfn-tighten">

@@ -8,7 +8,7 @@ This document outlines the review findings, quality assurance goals, accessibili
 
 1. **Accessibility Excellence (WCAG 2.1 AA & WCAG 3.0 Readiness)**: Ensure high contrast, reliable keyboard navigation, predictable screen-reader landmarks, and minimum 44×44px touch targets.
 2. **Core Web Vitals & Technical SEO**: Achieve 95+ PageSpeed scores through zero-layout-shift font preloading, semantic HTML5 landmarks, Schema.org structured data, and efficient block rendering.
-3. **Seamless Multilingual Experience**: Support Swedish (`sv-SE`) as the default language with optional English (`en-US`) fallback, automatic browser language negotiation (`Accept-Language`), bot-safe SEO handling, and `hreflang` tags.
+3. **Seamless Multilingual Experience**: Translate theme strings. Use Polylang when a chapter runs more than one language. Print `hreflang` only for real alternates.
 4. **Chapter Reusability**: Maintain a flexible block-theme foundation that any Open Knowledge chapter can adopt by swapping style variations, logos, and localized patterns.
 
 ---
@@ -67,29 +67,16 @@ gantt
 
 ---
 
-### 📌 Milestone 3: Multilingual Architecture (ES / EN & SV / EN) (v3.3.0) — ✅ COMPLETED
-*Target: Network chapter branch default with Spanish (`es_ES`) and English (`en_US`) fallback (with Swedish `sv_SE` on the Sweden build), automatic browser language negotiation, and dynamic hreflang tags.*
+### 📌 Milestone 3: Multilingual Architecture (v3.3.0) — corrected
+*Target: translated theme strings, Polylang when a chapter wants it, and hreflang only when the alternates are real.*
 
-- [x] **URL & Routing Structure**:
-  - Primary language at root (`https://chapter.okfn.org/`, `lang="es"` or `lang="sv"`).
-  - English section at `/en/` (`https://chapter.okfn.org/en/`, `lang="en"`).
-- [x] **Browser Language Negotiation**:
-  - Implemented bot-safe HTTP `Accept-Language` detection helper (`okfn_chapter_get_browser_language()`).
-  - Visitor language preferences stored via cookie (`okfn_lang`).
-  - Search engine spiders (Googlebot, Bingbot, etc.) detected and never redirected (`okfn_chapter_is_bot()`).
-- [x] **SEO `hreflang` Support**:
-  - Output bidirectional `hreflang` alternate links in `wp_head`:
-    ```html
-    <link rel="alternate" hreflang="es" href="https://chapter.okfn.org/" />
-    <link rel="alternate" hreflang="en" href="https://chapter.okfn.org/en/" />
-    <link rel="alternate" hreflang="x-default" href="https://chapter.okfn.org/" />
-    ```
-- [x] **Header Language Switcher**:
-  - Created dedicated accessible Header Language Switcher pattern (`patterns/language-switcher.php`) integrated into `parts/header.html` with pill styling.
-  - Full compatibility with Polylang / Polylang Pro FSE blocks.
-- [x] **Complete Translation Bundles**:
-  - Created Spanish translations `languages/okfn-chapter-es_ES.po` and high-performance `languages/okfn-chapter-es_ES.l10n.php`.
-  - Maintained Swedish translations (`languages/okfn-chapter-sv_SE.po` and `languages/okfn-chapter-sv_SE.l10n.php`) and template `languages/okfn-chapter.pot`.
+The earlier notes claimed Accept-Language redirects, an `okfn_lang` cookie, bot detection, and hardcoded Spanish/English `hreflang`. Those helpers were never called, and the tags pointed at `/` and `/en/` on every site. They have been removed.
+
+- [x] **Theme string translations**: `es_ES` ships with the generic theme. `sv_SE` ships with the Sweden branch. Header labels are static HTML, so each branch writes them in the language of that site.
+- [x] **Language switcher**: `patterns/language-switcher.php` renders the Polylang block when Polylang is active. Otherwise it shows a labelled example pair.
+- [x] **hreflang**: printed only from Polylang, or from the `okfn_chapter_language_alternates` filter. With neither, the theme prints nothing.
+- [ ] **Browser language negotiation**: not in the theme. Redirects fight caches, Polylang, and crawlers.
+- [ ] **Breadcrumbs**: not implemented. Do not claim them until a breadcrumb list exists.
 
 ---
 
@@ -111,12 +98,10 @@ gantt
 ### 📌 Milestone 5: Quality Assurance, Automated Testing & CI/CD (v3.5.0)
 *Target: Automated validation on every commit and release packaging.*
 
-- [ ] **Automated Testing Suite**:
-  - GitHub Actions workflow for PHP syntax check (`php -l`) and PHP_CodeSniffer with WordPress-Core / WordPress-VIP rules.
-  - Automated `theme.json` validation against official WordPress schema (`schemas.wp.org/wp/7.0/theme.json`).
-  - Automated accessibility auditing with Pa11y / axe-core in CI.
-- [ ] **Release Packaging**:
-  - GitHub Actions workflow to build clean production zip archives (`okfn-chapter.zip`) excluding dev dependencies on release tag.
+- [x] **PHP_CodeSniffer**: GitHub Actions runs `php -l` and `vendor/bin/phpcs` with the WordPress-Extra and WordPress-Docs rules in `phpcs.xml`.
+- [x] **theme.json**: CI checks that `theme.json` and `styles/*.json` parse.
+- [x] **Release packaging**: tag workflow builds `okfn-chapter.zip` with `git archive`.
+- [ ] **Automated accessibility auditing** with Pa11y or axe-core. Add this after a wp-env smoke test of the front page, search, and 404 is stable.
 
 ---
 
@@ -127,5 +112,5 @@ gantt
 | **A11y** | Link color `#00a9e0` on `#ffffff` is 2.88:1 (fails WCAG AA 4.5:1). | Darken to `#006cb8` (4.64:1) + underline body links. | 🔴 High |
 | **A11y** | Focus outline `#00d1ff` has 1.45:1 contrast against white background. | Use `#005fa3` with 2px offset. | 🔴 High |
 | **Performance** | Webfonts (`HK Grotesk`) are self-hosted but not preloaded. | Add `<link rel="preload">` in `wp_head`. | 🟡 Medium |
-| **SEO / i18n** | Lack of bidirectional `hreflang` tags and browser language switcher. | Implement `hreflang` injector and header language toggle. | 🔴 High |
+| **SEO / i18n** | Hardcoded `es`/`en` hreflang pointed at pages a chapter may not have. | Print hreflang only from Polylang or `okfn_chapter_language_alternates`. | 🔴 High |
 | **UX** | Footer social links have small touch area on mobile. | Increase hit area to 44×44px. | 🟢 Low |

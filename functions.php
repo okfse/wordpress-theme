@@ -19,7 +19,6 @@ function okfn_chapter_setup() {
 
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'editor-styles' );
-	add_editor_style( 'styles/fonts.css' );
 	add_editor_style( 'styles/tokens.css' );
 	add_editor_style( 'styles/components.css' );
 
@@ -44,16 +43,9 @@ function okfn_chapter_enqueue_styles() {
 	$theme_version = wp_get_theme()->get( 'Version' );
 
 	wp_enqueue_style(
-		'okfn-chapter-fonts',
-		get_template_directory_uri() . '/styles/fonts.css',
-		array(),
-		$theme_version
-	);
-
-	wp_enqueue_style(
 		'okfn-chapter-tokens',
 		get_template_directory_uri() . '/styles/tokens.css',
-		array( 'okfn-chapter-fonts' ),
+		array(),
 		$theme_version
 	);
 
@@ -182,7 +174,66 @@ function okfn_chapter_default_logo( $html ) {
 add_filter( 'get_custom_logo', 'okfn_chapter_default_logo' );
 
 /**
- * Preloads critical self-hosted webfonts in <head> for fast LCP and zero CLS.
+ * Chapter contact address. Chapters replace the example via the filter.
+ *
+ * @return string
+ */
+function okfn_chapter_contact_email() {
+	return apply_filters( 'okfn_chapter_contact_email', 'contact@example.org' );
+}
+
+/**
+ * Social profiles used by the footer and by Organization schema.
+ *
+ * URLs containing "example" are placeholders. sameAs omits those.
+ *
+ * @return array<int, array{service: string, url: string}>
+ */
+function okfn_chapter_social_links() {
+	$links = array(
+		array(
+			'service' => 'mastodon',
+			'url'     => 'https://mastodon.social/@example',
+		),
+		array(
+			'service' => 'github',
+			'url'     => 'https://github.com/example',
+		),
+		array(
+			'service' => 'linkedin',
+			'url'     => 'https://www.linkedin.com/company/example/',
+		),
+		array(
+			'service' => 'x',
+			'url'     => 'https://x.com/example',
+		),
+	);
+
+	return apply_filters( 'okfn_chapter_social_links', $links );
+}
+
+/**
+ * Donate page used by the closing band and the donate pattern.
+ *
+ * @return string
+ */
+function okfn_chapter_donate_url() {
+	return apply_filters( 'okfn_chapter_donate_url', home_url( '/donate/' ) );
+}
+
+/**
+ * Newsletter destination. Point this at the chapter list, not the Foundation list.
+ *
+ * @return string
+ */
+function okfn_chapter_newsletter_url() {
+	return apply_filters( 'okfn_chapter_newsletter_url', home_url( '/contact/' ) );
+}
+
+/**
+ * Preloads HK Grotesk Regular and Bold.
+ *
+ * Necto Mono stays off this path. It is only used for highlight headings and citations.
  *
  * @return void
  */
@@ -244,10 +295,10 @@ function okfn_chapter_meta_tags() {
 		$custom_logo_id = get_theme_mod( 'custom_logo' );
 		if ( $custom_logo_id ) {
 			$image = wp_get_attachment_image_url( $custom_logo_id, 'full' );
-		} else {
-			$image = get_template_directory_uri() . '/screenshot.png';
 		}
 	}
+
+	$card = $image ? 'summary_large_image' : 'summary';
 
 	printf( '<meta property="og:site_name" content="%s" />' . "\n", esc_attr( $site_name ) );
 	printf( '<meta property="og:type" content="%s" />' . "\n", esc_attr( $type ) );
@@ -261,7 +312,7 @@ function okfn_chapter_meta_tags() {
 		printf( '<meta property="og:image" content="%s" />' . "\n", esc_url( $image ) );
 	}
 
-	echo '<meta name="twitter:card" content="summary_large_image" />' . "\n";
+	printf( '<meta name="twitter:card" content="%s" />' . "\n", esc_attr( $card ) );
 	printf( '<meta name="twitter:title" content="%s" />' . "\n", esc_attr( $title ) );
 	if ( $description ) {
 		printf( '<meta name="twitter:description" content="%s" />' . "\n", esc_attr( $description ) );
@@ -291,22 +342,37 @@ function okfn_chapter_schema_json_ld() {
 	);
 
 	$org_schema = array(
-		'@type' => 'Organization',
+		'@type' => 'NonprofitOrganization',
 		'@id'   => $site_url . '#organization',
 		'name'  => $site_name,
 		'url'   => $site_url,
 	);
 
-	$custom_logo_id = get_theme_mod( 'custom_logo' );
-	if ( $custom_logo_id ) {
-		$logo_url = wp_get_attachment_image_url( $custom_logo_id, 'full' );
-		if ( $logo_url ) {
-			$org_schema['logo'] = array(
-				'@type' => 'ImageObject',
-				'url'   => $logo_url,
-			);
-		}
+	$email = okfn_chapter_contact_email();
+	if ( $email && ! str_contains( $email, 'example.org' ) ) {
+		$org_schema['email'] = $email;
 	}
+
+	$same_as = array();
+	foreach ( okfn_chapter_social_links() as $link ) {
+		if ( empty( $link['url'] ) || str_contains( $link['url'], 'example' ) ) {
+			continue;
+		}
+		$same_as[] = $link['url'];
+	}
+	if ( $same_as ) {
+		$org_schema['sameAs'] = $same_as;
+	}
+
+	$custom_logo_id = get_theme_mod( 'custom_logo' );
+	$logo_url       = $custom_logo_id ? wp_get_attachment_image_url( $custom_logo_id, 'full' ) : '';
+	if ( ! $logo_url ) {
+		$logo_url = get_template_directory_uri() . '/assets/images/lg-okfn.svg';
+	}
+	$org_schema['logo'] = array(
+		'@type' => 'ImageObject',
+		'url'   => $logo_url,
+	);
 
 	$schema['@graph'][] = $org_schema;
 
@@ -365,53 +431,11 @@ function okfn_chapter_schema_json_ld() {
 add_action( 'wp_head', 'okfn_chapter_schema_json_ld', 10 );
 
 /**
- * Detects if the current visitor is a search engine spider or crawler.
+ * Prints hreflang alternates from Polylang or from the okfn_chapter_language_alternates filter.
  *
- * @return bool
- */
-function okfn_chapter_is_bot() {
-	if ( empty( $_SERVER['HTTP_USER_AGENT'] ) ) {
-		return false;
-	}
-
-	$user_agent = strtolower( wp_unslash( $_SERVER['HTTP_USER_AGENT'] ) );
-	$bots       = array( 'googlebot', 'bingbot', 'slurp', 'duckduckbot', 'baiduspider', 'yandexbot', 'sogou', 'exabot', 'facebot', 'facebookexternalhit', 'ia_archiver' );
-
-	foreach ( $bots as $bot ) {
-		if ( str_contains( $user_agent, $bot ) ) {
-			return true;
-		}
-	}
-
-	return false;
-}
-
-/**
- * Returns the visitor's preferred language code based on cookie or Accept-Language header.
- *
- * @param array $supported Array of supported language codes (e.g. array('es', 'en')).
- * @param string $default Default language code.
- * @return string
- */
-function okfn_chapter_get_browser_language( $supported = array( 'es', 'en' ), $default = 'es' ) {
-	if ( ! empty( $_COOKIE['okfn_lang'] ) && in_array( $_COOKIE['okfn_lang'], $supported, true ) ) {
-		return sanitize_key( $_COOKIE['okfn_lang'] );
-	}
-
-	if ( ! empty( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ) ) {
-		$accept = strtolower( wp_unslash( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ) );
-		foreach ( $supported as $lang ) {
-			if ( str_starts_with( $accept, $lang ) || str_contains( $accept, ',' . $lang ) || str_contains( $accept, ';' . $lang ) ) {
-				return $lang;
-			}
-		}
-	}
-
-	return $default;
-}
-
-/**
- * Outputs bidirectional SEO hreflang tags in <head>.
+ * The filter returns a map of language code to absolute URL, for example
+ * array( 'en' => 'https://chapter.example/', 'sv' => 'https://chapter.example/sv/' ).
+ * Without Polylang and without that map, the theme prints nothing.
  *
  * @return void
  */
@@ -420,14 +444,24 @@ function okfn_chapter_hreflang_tags() {
 		return;
 	}
 
-	$site_url = home_url( '/' );
-	$es_url   = $site_url;
-	$en_url   = home_url( '/en/' );
+	$alternates = apply_filters( 'okfn_chapter_language_alternates', array() );
+	if ( ! is_array( $alternates ) || ! $alternates ) {
+		return;
+	}
 
-	printf( '<link rel="alternate" hreflang="es" href="%s" />' . "\n", esc_url( $es_url ) );
-	printf( '<link rel="alternate" hreflang="en" href="%s" />' . "\n", esc_url( $en_url ) );
-	printf( '<link rel="alternate" hreflang="x-default" href="%s" />' . "\n", esc_url( $site_url ) );
+	foreach ( $alternates as $lang => $url ) {
+		$lang = strtolower( (string) $lang );
+		if ( ! preg_match( '/^[a-z]{2}(-[a-z0-9]+)?$/', $lang ) && 'x-default' !== $lang ) {
+			continue;
+		}
+		if ( ! is_string( $url ) || '' === $url ) {
+			continue;
+		}
+		printf(
+			'<link rel="alternate" hreflang="%1$s" href="%2$s" />' . "\n",
+			esc_attr( $lang ),
+			esc_url( $url )
+		);
+	}
 }
 add_action( 'wp_head', 'okfn_chapter_hreflang_tags', 2 );
-
-

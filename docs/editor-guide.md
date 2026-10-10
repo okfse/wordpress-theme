@@ -22,11 +22,11 @@ This theme uses modern WordPress Full Site Editing (FSE). You do not need any pa
 
 The theme includes multiple built-in color schemes tailored to Open Knowledge brand colors:
 
-* **Default (Blue)**: The classic okfn.org electric cyan (`#00d1ff`) identity.
-* **Chapter Green (`styles/chapter-green.json`)**: Teal and vibrant green variation (`#2dd4bf`).
-* **Chapter Purple (`styles/chapter-purple.json`)**: Brand purple and violet variation (`#7c3aed`).
-* **Chapter Yellow (`styles/chapter-yellow.json`)**: Brand yellow accent variation (`#eab308`).
-* **Dark Mode (`styles/dark-mode.json`)**: High-contrast dark background (`#121214`) with glowing neon accents.
+* **Default (Blue)**: Footer and hero orb use OKFN cyan (`#00d1ff`). The other brand colours stay available: green `#adffed`, purple `#e077ff`, yellow `#e4ff36`.
+* **Chapter green**: Same palette. Footer and the default orb use brand green `#adffed`.
+* **Chapter purple**: Same palette. Footer and the default orb use brand purple `#e077ff`.
+* **Chapter yellow**: Same palette. Footer and the default orb use brand yellow `#e4ff36`.
+* **Dark mode**: Page background is brand black `#231f20`, text is white, links and orbs use brand cyan. The footer stays a light brand band with dark text.
 
 ### How to switch:
 1. Go to **Appearance → Editor → Styles** (the half-black/half-white circle in the top right).
@@ -43,6 +43,7 @@ To build pages, open the block inserter (`+` icon at the top left of the editor)
 |---|---|
 | **Hero punch** | High-impact hero section with orb background, title, mission copy, and CTA button. |
 | **Feature cards** | Three bordered cards with curved-arrow action links. |
+| **Topic cards** | Four public-interest themes. |
 | **Projects & Case studies** | Responsive grid of civic tech and data initiatives with category badges. |
 | **Events & Meetups** | Upcoming community meetups with calendar badges and RSVP links. |
 | **FAQ / Accordion** | Accessible expand/collapse accordion for frequently asked questions. |
@@ -51,7 +52,7 @@ To build pages, open the block inserter (`+` icon at the top left of the editor)
 | **Number stats** | Impact counter cards highlighting chapter milestones. |
 | **Person card** | Team, board, and speaker biographies with photo, role, and bio. |
 | **Newsletter** | Email subscription call-to-action with orb background. |
-| **Language switcher** | Accessible bilingual toggle pill (`ES | EN` / `SV | EN`). |
+| **Language switcher** | Polylang block when that plugin is active. Otherwise a labelled example pair. |
 
 ---
 
@@ -59,7 +60,7 @@ To build pages, open the block inserter (`+` icon at the top left of the editor)
 
 * **Spanish / English (Generic Network Theme)**: Primary strings are localized in `languages/okfn-chapter-es_ES.po` and `.l10n.php`.
 * **Swedish / English (Sweden Theme)**: Localized in `languages/okfn-chapter-sv_SE.po` and `.l10n.php`.
-* **Polylang Compatibility**: You can use the built-in `okfn-chapter/language-switcher` pattern or the Polylang Language Switcher block (`wp:polylang/language-switcher`).
+* **Polylang**: The header language pattern renders the Polylang switcher when the plugin is active. `hreflang` tags are left to Polylang, or to the `okfn_chapter_language_alternates` filter. The theme does not redirect on `Accept-Language`.
 
 ---
 

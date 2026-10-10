@@ -233,14 +233,14 @@
 }
 
 .okfn-footer {
-	background: var(--wp--preset--color--okfn-blue);
-	color: var(--wp--preset--color--contrast);
+	background: var(--okfn-accent, var(--wp--preset--color--okfn-blue));
+	color: #231f20;
 	padding-block: 3rem;
 	margin-top: var(--wp--preset--spacing--60);
 }
 
 .okfn-footer a {
-	color: var(--wp--preset--color--contrast);
+	color: #231f20;
 	font-weight: 700;
 	text-decoration: underline;
 	text-underline-offset: 2px;
@@ -248,14 +248,14 @@
 
 .okfn-footer a:hover,
 .okfn-footer a:focus-visible {
-	color: var(--wp--preset--color--contrast);
+	color: #231f20;
 	text-decoration: underline;
 	outline: 2px solid var(--wp--preset--color--contrast);
 	outline-offset: 2px;
 }
 
 .okfn-footer a:active {
-	color: var(--wp--preset--color--contrast);
+	color: #231f20;
 }
 
 .okfn-footer .wp-block-social-links {
@@ -499,4 +499,3 @@ body .is-layout-constrained > .alignfull {
 	margin-top: 1.25rem;
 	opacity: 0.85;
 }
-

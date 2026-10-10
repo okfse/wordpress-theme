@@ -26,7 +26,7 @@ Classic code is preserved in Git as tag `classic-2.0.0`.
 1. Deploy this repository as `wp-content/themes/okfn-chapter/` (do not reuse the dated classic folder name).
 2. Appearance → Themes → activate **OK Network Chapter**.
 3. Appearance → Editor → upload the chapter Site Logo (landscape, colour).
-4. Edit the Header Navigation: About, What we do, Get involved, Blog, Contact (Swedish slugs on okfn.se: `/om/`, `/oppnadata/`, `/engagera-dig/`, `/blog/`, `/kontakt/`).
+4. Edit the Header Navigation. Generic defaults are Who we are, What we do, Network, Get involved, Blog, and Contact. Page copy is in [starter-copy.md](starter-copy.md). The Sweden build keeps its existing slugs.
 5. Edit Footer social URLs and legal links.
 
 ## Content

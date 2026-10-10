@@ -7,6 +7,7 @@
  *
  * @package OKFN_Chapter
  */
+
 ?>
 <!-- wp:group {"metadata":{"name":"Latest posts"},"align":"wide","layout":{"type":"constrained","contentSize":"84rem"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70)">

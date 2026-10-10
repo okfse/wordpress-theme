@@ -4,6 +4,7 @@
  */
 
 :root {
+	--okfn-accent: var(--wp--preset--color--okfn-blue);
 	--okfn-orb-size: 31.25rem;
 	--okfn-orb-size-lg: 43.75rem;
 	--okfn-orb-blur: 8.4375rem;
@@ -34,7 +35,7 @@
 	height: var(--okfn-orb-size);
 	border-radius: 50%;
 	pointer-events: none;
-	background: color-mix(in srgb, var(--wp--preset--color--okfn-blue) 70%, transparent);
+	background: color-mix(in srgb, var(--okfn-accent) 70%, transparent);
 	filter: blur(var(--okfn-orb-blur));
 	mix-blend-mode: darken;
 	top: 0;

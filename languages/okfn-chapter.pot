@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: OK Network Chapter 3.0.0\n"
+"Project-Id-Version: OK Network Chapter 3.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/okfse/wordpress-theme\n"
-"POT-Creation-Date: 2026-08-20\n"
+"POT-Creation-Date: 2026-10-10\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,58 +37,139 @@ msgstr ""
 msgid "Yellow orb"
 msgstr ""
 
-msgid "A fair, free and <strong>open</strong> future."
+msgid "Comments"
 msgstr ""
 
-msgid "We work for a more open digital society — where non-sensitive information is open, free to use, build on and share."
+msgid "Support a fair, sustainable, and open future."
 msgstr ""
 
-msgid "Our mission"
+msgid "Money given here funds this chapter."
 msgstr ""
 
-msgid "Who we are"
+msgid "Donate"
 msgstr ""
 
-msgid "A local chapter of the Open Knowledge Network, working in the open for public good."
+msgid "Events"
 msgstr ""
 
-msgid "Open knowledge can be created and applied in many ways."
+msgid "Example only. Not a scheduled event."
+msgstr ""
+
+msgid "DD"
+msgstr ""
+
+msgid "Mon"
+msgstr ""
+
+msgid "Example meetup"
+msgstr ""
+
+msgid "Add a time and a place."
+msgstr ""
+
+msgid "Contact"
+msgstr ""
+
+msgid "Frequently Asked Questions"
+msgstr ""
+
+msgid "Short answers editors can rewrite for this chapter."
+msgstr ""
+
+msgid "What is open knowledge?"
+msgstr ""
+
+msgid "Open knowledge is content, information, or data that people are free to use, reuse, and share, without legal, technical, or social restrictions."
+msgstr ""
+
+msgid "How is this chapter related to the Open Knowledge Foundation?"
+msgstr ""
+
+msgid "This chapter is an independent non-profit in the Open Knowledge Network. The Open Knowledge Foundation is a separate organisation. It maintains shared tools and supports the network."
+msgstr ""
+
+msgid "How do I take part?"
+msgstr ""
+
+msgid "No special background is required. Come to a meetup, help with a project, or write to the chapter. People starting out in a country with no chapter write to network@okfn.org."
 msgstr ""
 
 msgid "How we work"
 msgstr ""
 
-msgid "A global network"
+msgid "We include people"
 msgstr ""
 
-msgid "Meetings, training, innovation, sharing and research: join us in opening knowledge for everyone."
+msgid "Meetings, training, and advocacy."
 msgstr ""
 
 msgid "Get involved"
 msgstr ""
 
-msgid "Open expertise"
+msgid "We build local capacity"
 msgstr ""
 
-msgid "We help partners with research, policy and technical work on open data and public information."
+msgid "Research, policy, and practical help with open data."
 msgstr ""
 
 msgid "Contact us"
 msgstr ""
 
-msgid "Open data"
+msgid "We are part of a network"
 msgstr ""
 
-msgid "Democracy, science, culture and markets all work better when information is open by default."
+msgid "Groups in more than 40 countries share tools and experience."
 msgstr ""
 
-msgid "Why open data"
+msgid "The Network"
 msgstr ""
 
-msgid "Read more"
+msgid "This chapter is an independent non-profit working for a fair, sustainable and open future."
 msgstr ""
 
-msgid "Website"
+msgid "Privacy policy"
+msgstr ""
+
+msgid "Code of conduct"
+msgstr ""
+
+msgid "Open Knowledge Network"
+msgstr ""
+
+msgid "Theme code is available under the <a href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General Public License v2.0 or later</a>."
+msgstr ""
+
+msgid "Content on this site is licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>."
+msgstr ""
+
+msgid "Open knowledge can be created and applied in many ways."
+msgstr ""
+
+msgid "Openness is our foundation."
+msgstr ""
+
+msgid "We believe knowledge should be accessible to everyone. This chapter advances open content, data, and technology in its own country, together with the Open Knowledge Network."
+msgstr ""
+
+msgid "Who we are"
+msgstr ""
+
+msgid "Page not found"
+msgstr ""
+
+msgid "The page you are looking for does not exist or has been moved."
+msgstr ""
+
+msgid "Back home"
+msgstr ""
+
+msgid "No posts were found. Try a different search or browse the latest posts from the blog."
+msgstr ""
+
+msgid "Example language switcher"
+msgstr ""
+
+msgid "Add language"
 msgstr ""
 
 msgid "Latest posts"
@@ -100,19 +181,13 @@ msgstr ""
 msgid "More posts"
 msgstr ""
 
-msgid "Name"
+msgid "Don't miss<br>a thing"
 msgstr ""
 
-msgid "Role"
+msgid "Stay on top of what is happening in the open movement."
 msgstr ""
 
-msgid "Short biography. Replace this text, the photo, and the contact details in the Site Editor."
-msgstr ""
-
-msgid "We believe open knowledge can empower everyone."
-msgstr ""
-
-msgid "Open Knowledge Network"
+msgid "Subscribe"
 msgstr ""
 
 msgid "Impact"
@@ -130,59 +205,77 @@ msgstr ""
 msgid "BY 4.0 by default"
 msgstr ""
 
-msgid "Don't miss<br>a thing"
+msgid "Let’s build a world where knowledge is accessible to everyone."
 msgstr ""
 
-msgid "Stay on top of what is happening in the open movement. We will never spam you."
+msgid "A local chapter of the Open Knowledge Network, working in the open for public good."
 msgstr ""
 
-msgid "Subscribe"
+msgid "Name"
 msgstr ""
 
-msgid "Support a fair, free and <strong>open</strong> future."
+msgid "Role"
 msgstr ""
 
-msgid "Donate now"
+msgid "Short biography. Replace this text, the photo, and the contact details in the Site Editor."
 msgstr ""
 
-msgid "Open Knowledge Sweden is a non-profit organisation working for a fair, free and open future."
+msgid "Read more"
 msgstr ""
 
-msgid "Privacy policy"
+msgid "Website"
 msgstr ""
 
-msgid "Cookie policy"
+msgid "Our Projects & Initiatives"
 msgstr ""
 
-msgid "Code of conduct"
+msgid "Replace these cards with the projects this chapter actually runs."
 msgstr ""
 
-msgid "IP policy"
+msgid "Example"
 msgstr ""
 
-msgid "Statutes"
+msgid "Example project"
 msgstr ""
 
-msgid "Donate"
+msgid "One sentence about a real project. Delete this card if you have nothing to list yet."
 msgstr ""
 
-msgid "Source code available under the MIT license."
+msgid "View project"
 msgstr ""
 
-msgid "Content on this site is licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>."
+msgid "Learn more"
 msgstr ""
 
-msgid "Page not found"
+msgid "Read case study"
 msgstr ""
 
-msgid "The page you are looking for does not exist or has been moved."
+msgid "We believe open knowledge can empower everyone."
 msgstr ""
 
-msgid "Back home"
+msgid "Global challenges"
 msgstr ""
 
-msgid "No posts were found. Try a different search or browse the latest posts from the blog."
+msgid "Open information helps people understand shared problems and see what is working."
 msgstr ""
 
-msgid "Comments"
+msgid "Democratic accountability"
+msgstr ""
+
+msgid "People need access to information about how public institutions work."
+msgstr ""
+
+msgid "Research, science, and culture"
+msgstr ""
+
+msgid "Knowledge people can use, reuse, and share."
+msgstr ""
+
+msgid "Consumers and corporate accountability"
+msgstr ""
+
+msgid "Information about who controls organisations, products, and services."
+msgstr ""
+
+msgid "Where open knowledge matters"
 msgstr ""

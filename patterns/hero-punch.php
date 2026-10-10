@@ -17,17 +17,17 @@ $image = get_template_directory_uri() . '/assets/images/lg-okfn.svg';
 		<!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
 			<!-- wp:heading {"level":1,"fontSize":"huge"} -->
-			<h1 class="wp-block-heading has-huge-font-size"><?php echo wp_kses_post( __( 'A fair, free and <strong>open</strong> future.', 'okfn-chapter' ) ); ?></h1>
+			<h1 class="wp-block-heading has-huge-font-size"><?php esc_html_e( 'Openness is our foundation.', 'okfn-chapter' ); ?></h1>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"fontSize":"okfn-lg"} -->
-			<p class="has-okfn-lg-font-size"><?php esc_html_e( 'We work for a more open digital society — where non-sensitive information is open, free to use, build on and share.', 'okfn-chapter' ); ?></p>
+			<p class="has-okfn-lg-font-size"><?php esc_html_e( 'We believe knowledge should be accessible to everyone. This chapter advances open content, data, and technology in its own country, together with the Open Knowledge Network.', 'okfn-chapter' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button -->
-				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/om/' ) ); ?>"><?php esc_html_e( 'Our mission', 'okfn-chapter' ); ?></a></div>
+				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'Who we are', 'okfn-chapter' ); ?></a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->

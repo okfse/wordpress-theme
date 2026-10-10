@@ -20,12 +20,12 @@ $image = get_template_directory_uri() . '/assets/images/section-newsletter.svg';
 			<h2 class="wp-block-heading"><?php echo wp_kses_post( __( 'Don\'t miss<br>a thing', 'okfn-chapter' ) ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"fontSize":"okfn-lg"} -->
-			<p class="has-okfn-lg-font-size"><?php esc_html_e( 'Stay on top of what is happening in the open movement. We will never spam you.', 'okfn-chapter' ); ?></p>
+			<p class="has-okfn-lg-font-size"><?php esc_html_e( 'Stay on top of what is happening in the open movement.', 'okfn-chapter' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button -->
-				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Subscribe', 'okfn-chapter' ); ?></a></div>
+				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( okfn_chapter_newsletter_url() ); ?>"><?php esc_html_e( 'Subscribe', 'okfn-chapter' ); ?></a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->

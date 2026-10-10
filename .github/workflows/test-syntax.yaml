@@ -2,13 +2,7 @@ name: CI & Quality Assurance
 
 on:
   push:
-    branches:
-      - master
-      - v3/okfn-chapter
-      - sweden/okfn-chapter
   pull_request:
-    branches:
-      - master
 
 jobs:
   lint:
@@ -26,10 +20,16 @@ jobs:
         with:
           php-version: ${{ env.PHP_VERSION }}
           extensions: mbstring, json, gettext
-          tools: phpcs
+          coverage: none
+
+      - name: Install PHPCS and WordPress Coding Standards
+        run: composer install --no-interaction --no-progress
 
       - name: PHP Syntax Check
         run: find -L . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n 1 -P 4 php -l
+
+      - name: PHP_CodeSniffer
+        run: vendor/bin/phpcs
 
       - name: Validate theme.json and Style Variations
         run: python3 -c "import json, glob; [json.load(open(f)) for f in ['theme.json'] + glob.glob('styles/*.json')]"

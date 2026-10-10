@@ -7,6 +7,7 @@
  *
  * @package OKFN_Chapter
  */
+
 ?>
 <!-- wp:group {"metadata":{"name":"Quote"},"className":"okfn-quote okfn-tighten","layout":{"type":"constrained"}} -->
 <div class="wp-block-group okfn-quote okfn-tighten">
