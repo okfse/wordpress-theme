@@ -15,7 +15,20 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return void
  */
 function okfn_chapter_setup() {
-	load_theme_textdomain( 'okfn-chapter', get_template_directory() . '/languages' );
+	$languages = get_template_directory() . '/languages';
+	load_theme_textdomain( 'okfn-chapter', $languages );
+
+	/*
+	 * Inside a theme, just-in-time loading looks for languages/{locale}.mo.
+	 * These catalogs are named okfn-chapter-{locale}.l10n.php, which is what
+	 * load_textdomain() reads when given the matching .mo path.
+	 */
+	$locale          = determine_locale();
+	$mofile          = $languages . '/okfn-chapter-' . $locale . '.mo';
+	$php_translation = substr( $mofile, 0, -3 ) . '.l10n.php';
+	if ( is_readable( $php_translation ) || is_readable( $mofile ) ) {
+		load_textdomain( 'okfn-chapter', $mofile );
+	}
 
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'editor-styles' );
