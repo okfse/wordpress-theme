@@ -1,6 +1,6 @@
 # Fork a chapter from this theme
 
-Keep one upstream: the `v3/theme-improvements` line in this repository. A chapter site installs that theme. Sweden stays on `sweden/theme-improvements` until the parent is released as a versioned zip. After that, Sweden can become a child theme. Do not copy this whole repository into a second theme repo.
+Keep one upstream: the `v3/theme-improvements` line in this repository. A chapter site installs that theme. Sweden stays on `sweden-customizations` until the parent is released as a versioned zip. After that, Sweden can become a child theme. Do not copy this whole repository into a second theme repo.
 
 ## Change these files
 

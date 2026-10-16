@@ -2,7 +2,7 @@
 
 The classic theme (`OKFN-WP` 2.0, folder names such as `wordpress-theme-2022-05-10`) is a Bootstrap 4 PHP theme. This block theme replaces it. Activating it does not rewrite page HTML. Classic code is tag `classic-2.0.0`.
 
-Open Knowledge Sweden follows the cutover in `docs/migration.md` on branch `sweden/theme-improvements`. Another chapter follows [fork-a-chapter.md](fork-a-chapter.md) and [starter-copy.md](starter-copy.md).
+Open Knowledge Sweden follows the cutover in `docs/migration.md` on branch `sweden-customizations`. Install that site from the `v3.1.0` release zip, not from a branch archive. Another chapter follows [fork-a-chapter.md](fork-a-chapter.md) and [starter-copy.md](starter-copy.md).
 
 ## Shared steps
 
