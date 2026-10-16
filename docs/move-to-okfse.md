@@ -1,12 +1,12 @@
 # Move this repository to github.com/okfse
 
-Work currently lives at `mattiasaxell/wordpress-theme`. Target: the [okfse](https://github.com/okfse) organisation.
+The repository is already at [github.com/okfse/wordpress-theme](https://github.com/okfse/wordpress-theme). The steps below are the record of that move, which started from `mattiasaxell/wordpress-theme`.
 
 ## Path A — GitHub transfer (preferred)
 
 You need admin on this repo and permission to create repositories in **okfse**. The org must not already have `wordpress-theme` or another fork in the same network as `okfn/wordpress-theme`.
 
-1. Confirm branches and tags are pushed: `v3/okfn-chapter`, `sweden/okfn-chapter`, `classic-2.0.0`.
+1. Confirm branches and tags are pushed: `v3/theme-improvements`, `sweden/theme-improvements`, `classic-2.0.0`. The older names `v3/okfn-chapter` and `sweden/okfn-chapter` are history.
 2. Open the repo on GitHub → **Settings** → **Danger Zone** → **Transfer**.
 3. New owner: `okfse`. You may rename to `okfn-chapter` during the transfer.
 4. Type the current repository name to confirm.
@@ -37,4 +37,6 @@ This keeps git history but does not move GitHub issues or PRs. Leave a short not
 ## After the move
 
 - Add other OK Sweden maintainers on the org repo.
-- For okfn.se work, set the GitHub default branch to `sweden/okfn-chapter`. Keep `v3/okfn-chapter` as the generic Network line.
+- The GitHub default branch follows the shared chapter theme: `v3/theme-improvements`, merged to `master` when that line is tagged. Other chapters start from that line.
+- okfn.se work stays on `sweden/theme-improvements` in this repository. That branch is the Sweden layer (logos, Swedish header, Sweden URLs). It is not a fork and it is not the default branch.
+- `sweden/okfn-chapter` is the earlier logo drop, from before the shared improvements. Leave it. Do not deploy it.

@@ -14,8 +14,8 @@
 <?php else : ?>
 <!-- wp:group {"metadata":{"name":"Language switcher"},"className":"okfn-lang-switcher okfn-lang-switcher--sample","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 <div class="wp-block-group okfn-lang-switcher okfn-lang-switcher--sample" role="navigation" aria-label="<?php echo esc_attr__( 'Example language switcher', 'okfn-chapter' ); ?>">
-	<!-- wp:paragraph {"className":"okfn-lang-switcher__item is-active"} -->
-	<p class="okfn-lang-switcher__item is-active"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" hreflang="en" lang="en" aria-current="page">EN</a></p>
+	<!-- wp:paragraph {"className":"okfn-lang-switcher__item"} -->
+	<p class="okfn-lang-switcher__item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" hreflang="en" lang="en">EN</a></p>
 	<!-- /wp:paragraph -->
 	<!-- wp:paragraph {"className":"okfn-lang-switcher__separator"} -->
 	<p class="okfn-lang-switcher__separator" aria-hidden="true">|</p>

@@ -1,56 +1,19 @@
-# Migrating okfn.se (and other classic OKFN-WP sites)
+# Migrating a classic OKFN-WP site
 
-The classic theme (`OKFN-WP` 2.0, folder names such as `wordpress-theme-2022-05-10`) is a Bootstrap 4 PHP theme. This block theme is a replacement, not an in-place upgrade.
+The classic theme (`OKFN-WP` 2.0, folder names such as `wordpress-theme-2022-05-10`) is a Bootstrap 4 PHP theme. This block theme replaces it. Activating it does not rewrite page HTML. Classic code is tag `classic-2.0.0`.
 
-Classic code is preserved in Git as tag `classic-2.0.0`.
+Open Knowledge Sweden follows the cutover in `docs/migration.md` on branch `sweden/theme-improvements`. Another chapter follows [fork-a-chapter.md](fork-a-chapter.md) and [starter-copy.md](starter-copy.md).
 
-## Before cutover
+## Shared steps
 
-1. Confirm the host runs **PHP 8.2+** and can run **WordPress 7.0+** (okf.fi is on 7.0.4).
-2. Take a full backup of the database and `wp-content/uploads`.
-3. Copy production to a staging URL.
-4. Upgrade WordPress core to 7.0+ on staging first, while the classic theme is still active. Fix plugin incompatibilities there.
-5. Scan the database for leftover shortcodes:
+1. The host needs PHP 8.2+ and WordPress 7.0+.
+2. Back up the database and `wp-content/uploads`. Do the work on a staging copy.
+3. Deploy this branch as `wp-content/themes/okfn-chapter/` and activate **OK Network Chapter**. Leave the classic folder installed until the new theme has been checked.
+4. Set the site language to the chapter locale so pattern strings translate. Labels in `parts/header.html` are static HTML and do not go through gettext.
+5. `templates/front-page.html` replaces the static front page body with patterns. It does not print that page’s content. Other pages keep their content through `page.html`. Posts keep their permalinks through `single.html`.
+6. Search published content for classic shortcodes (`latestposts`, `latest_posts`, `pseudocontent`, `carousel`, `slide`, `banner`, `notitle`, `menupod`) and replace the hits in the editor. The latest-posts pattern replaces `[latestposts]`.
+7. Walk the header, the mobile menu, the footer, the home page, a post, search, and the 404.
 
-   ```sql
-   SELECT ID, post_title FROM wp_posts
-   WHERE post_content LIKE '%[latestposts%'
-      OR post_content LIKE '%[carousel%'
-      OR post_content LIKE '%[pseudocontent%';
-   ```
+Contact Form 7 is optional. Analytics stay out of the theme. See [umami.md](umami.md).
 
-   Replace those blocks of content after the new theme is active (Query Loop pattern replaces `[latestposts]`).
-
-## Install the new theme
-
-1. Deploy this repository as `wp-content/themes/okfn-chapter/` (do not reuse the dated classic folder name).
-2. Appearance → Themes → activate **OK Network Chapter**.
-3. Appearance → Editor → upload the chapter Site Logo (landscape, colour).
-4. Edit the Header Navigation. Generic defaults are Who we are, What we do, Network, Get involved, Blog, and Contact. Page copy is in [starter-copy.md](starter-copy.md). The Sweden build keeps its existing slugs.
-5. Edit Footer social URLs and legal links.
-
-## Content
-
-| Surface | Action |
-|---|---|
-| Blog posts | Keep permalinks and dates. Open a post and convert classic blocks to blocks if needed. The single template supplies title, date, author. |
-| Home | Assign the front page template (or use **Page without title** and insert Hero / Feature cards / Latest posts / Page closing patterns). |
-| Key pages (Om, Engagera dig, Kontakt, Donera, English equivalents) | Rebuild with patterns. Do not try to restyle 2022 Bootstrap markup. |
-| Long-tail project pages | Convert to blocks; apply heading/button styles only. |
-| Menus | Recreate in the Site Editor. Block themes do not use `register_nav_menus()` locations. |
-| Theme Options (GA, Twitter, CTA) | Not ported. Analytics: [Umami Hobby + Integrate Umami](umami.md). CTA is the **Page closing** pattern. |
-
-## After cutover
-
-- Walk header (desktop + mobile overlay), footer, home, a post, search, and 404.
-- Check contrast: yellow/green/purple are backgrounds, never small body text.
-- Confirm custom logo, favicon, and social links.
-- Keep the classic theme folder on the server for one release cycle, then remove it.
-
-## Optional plugins (GPL)
-
-- Contact Form 7 — contact page (okf.fi uses this).
-- A caching plugin the host already supports.
-- Create Block Theme — **development only**, to dump Site Editor changes back to files.
-
-Do not install Astra, Spectra / Ultimate Addons for Gutenberg, Elementor, or similar builders.
+Do not install Astra, Spectra / Ultimate Addons for Gutenberg, Elementor, or a similar builder.
