@@ -2,7 +2,7 @@
 
 Version on this branch: **3.1.0**. Items under “Shipped” are in the code. They are not an accessibility audit, a performance score, or a finished Sweden launch.
 
-The shared line is `v3/theme-improvements`. Open Knowledge Sweden tracks it from `sweden/theme-improvements` in this same repository. Do not fork a second theme repo. See [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
+The shared line is `v3/theme-improvements`. Open Knowledge Sweden tracks it from `sweden-customizations` in this same repository. Do not fork a second theme repo. See [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
 
 ## Shipped in 3.1.0
 
@@ -17,20 +17,20 @@ The shared line is `v3/theme-improvements`. Open Knowledge Sweden tracks it from
 - Chapter filters: `okfn_chapter_contact_email`, `okfn_chapter_social_links`, `okfn_chapter_donate_url`, `okfn_chapter_newsletter_url`.
 - GitHub Actions: PHP syntax, PHPCS (WordPress-Extra and WordPress-Docs), PO compile, JSON parse of `theme.json` and `styles/*.json`, and a release zip via `git archive`.
 
-The Sweden layer (OKSE logos, Swedish header, Sweden URLs, `docs/starter-copy-sv.md`) is the branch `sweden/theme-improvements`, not a separate product version.
+The Sweden layer (OKSE logos, Swedish header, Sweden URLs, `docs/starter-copy-sv.md`) is the branch `sweden-customizations`, not a separate product version.
 
 ## Now, before the okfn.se cutover
 
-These are the remaining gates. Details for the staging host are in `docs/migration.md` on `sweden/theme-improvements`.
+These are the remaining gates. Details for the staging host are in `docs/migration.md` on `sweden-customizations`.
 
-1. Merge `v3/theme-improvements` into `sweden/theme-improvements` before that branch is deployed.
+1. `v3.1.0` already contains `v3/theme-improvements`. Merge that line into `sweden-customizations` again before the next Sweden release.
 2. On staging, set the site language to Svenska so `sv_SE` pattern strings load. okfn.se is `lang="en"` today. An English site language renders the new front page in English under the Swedish header.
-3. Confirm PHP 8.2 or newer. okfn.se already runs WordPress 7.1.3. Bump `Tested up to` when this theme is tagged.
+3. Confirm PHP 8.2 or newer on the host. The theme is tested up to WordPress 7.1. okfn.se already runs 7.1.3.
 4. A native speaker on the board approves the legal sentences in `docs/starter-copy-sv.md` before they replace `/om/`.
 5. Confirm the Sweden social URLs (Mastodon `mastodon.nu/@okfse`, GitHub `okfse`, LinkedIn `open-knowledge-sweden`, X `okfse`).
 6. Walk staging logged out: header, mobile overlay, footer, front page, one post, search, 404, `/donera/`, `/en/`.
 7. If Jetpack’s SEO module is enabled, it already prints sharing tags and this theme will print a second set. Turn one of them off.
-8. The Sweden language switcher must not mark SV as the current item on `/en/` URLs.
+8. On staging, confirm the language switcher marks EN on `/en/` and SV on the Swedish pages.
 
 ## Later, after Sweden is live
 

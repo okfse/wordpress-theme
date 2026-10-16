@@ -2,7 +2,7 @@
 
 The classic theme (`OKFN-WP` 2.0, folder `wordpress-theme-2022-05-10`) is a Bootstrap 4 PHP theme. This block theme replaces the header, footer, and templates. It does not rewrite page HTML. Classic code is tag `classic-2.0.0`.
 
-Deploy branch `sweden/theme-improvements` from this repository. Do not deploy `master`, `sweden/okfn-chapter`, or a fork. Another chapter follows [fork-a-chapter.md](fork-a-chapter.md) and [starter-copy.md](starter-copy.md).
+Install the release file [okfn-chapter.zip](https://github.com/okfse/wordpress-theme/releases/download/v3.1.0/okfn-chapter.zip) from tag `v3.1.0`. That tag is the Sweden theme. Do not install a zip downloaded from the branch menu: GitHub names that archive after the branch, and WordPress will not see it as `okfn-chapter`. Later edits stay on branch `sweden-customizations`. Do not deploy `master`, `sweden/okfn-chapter`, or a fork. Another chapter follows [fork-a-chapter.md](fork-a-chapter.md) and [starter-copy.md](starter-copy.md).
 
 Inventory of the live site on 16 October 2026:
 
@@ -19,7 +19,7 @@ Inventory of the live site on 16 October 2026:
 
 1. Back up the database and `wp-content/uploads`. Copy production to a staging host.
 2. Confirm PHP 8.2 or newer.
-3. Deploy `sweden/theme-improvements` as `wp-content/themes/okfn-chapter/`. Leave `wordpress-theme-2022-05-10` installed.
+3. Install `okfn-chapter.zip` so the directory is `wp-content/themes/okfn-chapter/`. Leave `wordpress-theme-2022-05-10` installed.
 4. Activate **OK Network Chapter**.
 5. Settings → General → Site Language → Svenska. Pattern strings load `sv_SE` only when that is the site language. The header in `parts/header.html` is Swedish either way. An English site language would put English pattern text under that Swedish header.
 6. Settings → Reading stays a static front page: Hem in front, Blogg for posts. The new front page comes from the theme template.
