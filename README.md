@@ -2,7 +2,7 @@
 
 WordPress **7.0+** block theme for [Open Knowledge Sweden](https://okfn.se/) (`okfn.se`). This branch is the Sweden layer on the generic Network theme: OKSE logos, Swedish navigation, `sv_SE`, and Sweden legal links. Visual identity (palette, HK Grotesk, pill buttons, colour orbs) matches okfn.org. No Astra, Spectra, Elementor, or other page-builder plugin is required.
 
-Version **3.1.0**. The generic chapter theme is branch `v3/theme-improvements` (upstream `v3/okfn-chapter`). The classic Bootstrap theme is tag `classic-2.0.0`. Do not copy this repository into a second theme repo. See [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
+Version **3.1.0**. The generic chapter theme is branch `v3/theme-improvements`. The classic Bootstrap theme is tag `classic-2.0.0`. Do not copy this repository into a second theme repo. See [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
 
 Default logos (SVG) live in `assets/logos/`:
 
