@@ -283,3 +283,15 @@ msgstr ""
 
 msgid "Where open knowledge matters"
 msgstr ""
+
+msgid "Happening now"
+msgstr "På gång"
+
+msgid "Placeholder cover for a project. Replace the photo, this text, and the link."
+msgstr "Platshållare för ett projekt. Byt ut bilden, den här texten och länken."
+
+msgid "Placeholder cover for an event. Replace the photo, this text, and the link."
+msgstr "Platshållare för ett evenemang. Byt ut bilden, den här texten och länken."
+
+msgid "Placeholder cover for the contact page. Replace the photo, this text, and the link."
+msgstr "Platshållare för kontaktsidan. Byt ut bilden, den här texten och länken."

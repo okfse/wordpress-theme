@@ -45,5 +45,9 @@ return array(
 		'Read more' => 'Läs mer',
 		'Website' => 'Webbplats',
 		'We believe open knowledge can empower everyone.' => 'Vi tror att öppen kunskap kan stärka alla.',
+		'Happening now' => 'På gång',
+		'Placeholder cover for a project. Replace the photo, this text, and the link.' => 'Platshållare för ett projekt. Byt ut bilden, den här texten och länken.',
+		'Placeholder cover for an event. Replace the photo, this text, and the link.' => 'Platshållare för ett evenemang. Byt ut bilden, den här texten och länken.',
+		'Placeholder cover for the contact page. Replace the photo, this text, and the link.' => 'Platshållare för kontaktsidan. Byt ut bilden, den här texten och länken.',
 	),
 );

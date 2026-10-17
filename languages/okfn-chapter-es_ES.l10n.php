@@ -94,5 +94,9 @@ return array(
 		'Consumers and corporate accountability' => 'Consumidores y responsabilidad empresarial',
 		'Information about who controls organisations, products, and services.' => 'Información sobre quién controla organizaciones, productos y servicios.',
 		'Where open knowledge matters' => 'Dónde importa el conocimiento abierto',
+		'Happening now' => 'Ahora mismo',
+		'Placeholder cover for a project. Replace the photo, this text, and the link.' => 'Portada de ejemplo para un proyecto. Sustituye la foto, este texto y el enlace.',
+		'Placeholder cover for an event. Replace the photo, this text, and the link.' => 'Portada de ejemplo para un evento. Sustituye la foto, este texto y el enlace.',
+		'Placeholder cover for the contact page. Replace the photo, this text, and the link.' => 'Portada de ejemplo para la página de contacto. Sustituye la foto, este texto y el enlace.',
 	),
 );

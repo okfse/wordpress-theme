@@ -279,3 +279,15 @@ msgstr ""
 
 msgid "Where open knowledge matters"
 msgstr ""
+
+msgid "Happening now"
+msgstr ""
+
+msgid "Placeholder cover for a project. Replace the photo, this text, and the link."
+msgstr ""
+
+msgid "Placeholder cover for an event. Replace the photo, this text, and the link."
+msgstr ""
+
+msgid "Placeholder cover for the contact page. Replace the photo, this text, and the link."
+msgstr ""

@@ -283,3 +283,15 @@ msgstr "Información sobre quién controla organizaciones, productos y servicios
 
 msgid "Where open knowledge matters"
 msgstr "Dónde importa el conocimiento abierto"
+
+msgid "Happening now"
+msgstr "Ahora mismo"
+
+msgid "Placeholder cover for a project. Replace the photo, this text, and the link."
+msgstr "Portada de ejemplo para un proyecto. Sustituye la foto, este texto y el enlace."
+
+msgid "Placeholder cover for an event. Replace the photo, this text, and the link."
+msgstr "Portada de ejemplo para un evento. Sustituye la foto, este texto y el enlace."
+
+msgid "Placeholder cover for the contact page. Replace the photo, this text, and the link."
+msgstr "Portada de ejemplo para la página de contacto. Sustituye la foto, este texto y el enlace."

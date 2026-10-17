@@ -1,6 +1,6 @@
 # OK Network Chapter — roadmap
 
-Version on this branch: **3.1.0**. Items under “Shipped” are in the code. They are not an accessibility audit, a performance score, or a finished Sweden launch.
+Version on this branch: **3.2.0**, tag `v3.2.0-network`. The Sweden install zip is tag `v3.2.0` on `sweden-customizations`. Items under “Shipped” are in the code. They are not an accessibility audit, a performance score, or a finished Sweden launch.
 
 The shared line is `v3/theme-improvements`. Open Knowledge Sweden tracks it from `sweden-customizations` in this same repository. Do not fork a second theme repo. See [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
 
@@ -18,6 +18,10 @@ The shared line is `v3/theme-improvements`. Open Knowledge Sweden tracks it from
 - GitHub Actions: PHP syntax, PHPCS (WordPress-Extra and WordPress-Docs), PO compile, JSON parse of `theme.json` and `styles/*.json`, and a release zip via `git archive`.
 
 The Sweden layer (OKSE logos, Swedish header, Sweden URLs, `docs/starter-copy-sv.md`) is the branch `sweden-customizations`, not a separate product version.
+
+## Shipped in 3.2.0
+
+- Happening now: cover photos on the front page, under the hero. Each card is one link to a project or event. Editors replace the image, the caption, the alt text, and the link. Sweden keeps its own URLs on `sweden-customizations`.
 
 ## Now, before the okfn.se cutover
 
