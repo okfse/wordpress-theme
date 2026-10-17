@@ -42,6 +42,7 @@ To build pages, open the block inserter (`+` icon at the top left of the editor)
 | Pattern Name | Description |
 |---|---|
 | **Hero punch** | High-impact hero section with orb background, title, mission copy, and CTA button. |
+| **Happening now** | Cover photos under the hero. Each photo links to a project or an event. |
 | **Feature cards** | Three bordered cards with curved-arrow action links. |
 | **Topic cards** | Four public-interest themes. |
 | **Projects & Case studies** | Responsive grid of civic tech and data initiatives with category badges. |
@@ -53,6 +54,14 @@ To build pages, open the block inserter (`+` icon at the top left of the editor)
 | **Person card** | Team, board, and speaker biographies with photo, role, and bio. |
 | **Newsletter** | Email subscription call-to-action with orb background. |
 | **Language switcher** | Polylang block when that plugin is active. Otherwise a labelled example pair. |
+
+### Happening now
+
+On a new site the band sits on the front page, under the hero and above the feature cards. Each card is one cover photo. Select the image and change four fields: the image, the caption, the alt text, and the link. Use the same title for the caption and the alt text. The image link covers the photo and the caption, so the whole card is one link.
+
+To add a card, switch to list view, duplicate one **Cover** block, then replace those four fields. To remove a card, delete that block. The order in the list is the order on the page.
+
+If the band is missing after a theme update, the front page was saved in the database before this pattern existed. Open the front page template (**Appearance → Editor → Templates → Front Page**, or **Utseende → Redigerare → Mallar → Startsida**) and insert **Happening now** under the hero.
 
 ---
 

@@ -2,7 +2,7 @@
 
 WordPress **7.0+** block theme for [Open Knowledge Sweden](https://okfn.se/) (`okfn.se`). This branch is the Sweden layer on the generic Network theme: OKSE logos, Swedish navigation, `sv_SE`, and Sweden legal links. Visual identity (palette, HK Grotesk, pill buttons, colour orbs) matches okfn.org. No Astra, Spectra, Elementor, or other page-builder plugin is required.
 
-Version **3.1.3**. Three fixes after 3.1.0: the header logo keeps its shape on a phone, the menu stays behind the menu button until the window is wider than 1100px, and the front page type and post grid fit a narrow screen. The generic chapter theme is branch `v3/theme-improvements`. The classic Bootstrap theme is tag `classic-2.0.0`. Do not copy this repository into a second theme repo. See [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
+Version **3.2.0**. Happening now adds cover photos under the hero. Each card links to a project or an event. 3.1.3 was the three mobile fixes after 3.1.0: logo shape, the menu button until the window is wider than 1100px, and front-page type. The generic chapter theme is branch `v3/theme-improvements`, tag `v3.2.0-network`. The classic Bootstrap theme is tag `classic-2.0.0`. Do not copy this repository into a second theme repo. See [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
 
 Default logos (SVG) live in `assets/logos/`:
 
@@ -56,7 +56,7 @@ find -L . -name '*.php' -print0 | xargs -0 -n 1 php -l
 2. Site Logo already falls back to `OKSE-landscape-full-rgb.svg`. Upload a replacement only if you need a different cut.
 3. The header navigation is Swedish and keeps the existing slugs: Om, Vad vi gör, Engagera dig, Blogg, Kontakt.
 4. Open the **Footer** template part (or the Footer pattern) for social URLs and legal links.
-5. Build pages from **Patterns → OK Network**: Hero punch, Feature cards, Person card, Quote, Latest posts, Newsletter, Page closing, etc.
+5. Build pages from **Patterns → OK Network**: Hero punch, Happening now, Feature cards, Person card, Quote, Latest posts, Newsletter, Page closing, etc. The front page places Happening now under the hero: cover photos that link to a project or an event.
 6. Button styles: default (black fill), **White fill**, **Pill** (outline). Heading style **Highlight (mono)** uses Necto Mono.
 7. Group styles **Blue / Green / Purple / Yellow orb** add the brand colour-circle background.
 

@@ -12,6 +12,8 @@ Lead: We believe knowledge should be accessible to everyone. This chapter advanc
 
 Button: Who we are → `/about/`
 
+Happening now, under the hero: three placeholder covers. Replace each photo, caption, alt text, and link with a real project or event before publishing.
+
 How we work:
 
 - We include people. Meetings, training, and advocacy. → `/get-involved/`

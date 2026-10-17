@@ -594,3 +594,69 @@ body .is-layout-constrained > .alignfull {
 	margin-top: 1.25rem;
 	opacity: 0.85;
 }
+
+/* Happening now: cover photos under the hero. */
+.okfn-happening h2 {
+	margin-bottom: 1.25rem;
+}
+
+.okfn-happening .wp-block-columns {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: var(--wp--preset--spacing--40);
+}
+
+.okfn-happening .wp-block-column {
+	min-width: 0;
+}
+
+@media (min-width: 782px) {
+	.okfn-happening .wp-block-columns {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 1100px) {
+	.okfn-happening .wp-block-columns {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.okfn-happening__card {
+	position: relative;
+	margin: 0;
+}
+
+.okfn-happening__card img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+
+.okfn-happening__card figcaption {
+	margin: 0.75rem 0 0;
+	font-size: 1.1875rem;
+	line-height: 1.4;
+	color: var(--wp--preset--color--contrast);
+}
+
+.okfn-happening__card a::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+}
+
+.okfn-happening__card a:focus-visible {
+	outline: none;
+}
+
+.okfn-happening__card a:focus-visible::after {
+	outline: 2px solid var(--wp--preset--color--contrast);
+	outline-offset: 2px;
+}
+
+.editor-styles-wrapper .okfn-happening__card a::after {
+	pointer-events: none;
+}
