@@ -27,7 +27,7 @@ The Sweden layer (OKSE logos, Swedish header, Sweden URLs, `docs/starter-copy-sv
 
 These are the remaining gates. Details for the staging host are in `docs/migration.md` on `sweden-customizations`.
 
-1. `v3.1.0` already contains `v3/theme-improvements`. Merge that line into `sweden-customizations` again before the next Sweden release.
+1. `v3/theme-improvements` is merged for 3.2.0. Merge that line into `sweden-customizations` again before the next Sweden release.
 2. On staging, set the site language to Svenska so `sv_SE` pattern strings load. okfn.se is `lang="en"` today. An English site language renders the new front page in English under the Swedish header.
 3. Confirm PHP 8.2 or newer on the host. The theme is tested up to WordPress 7.1. okfn.se already runs 7.1.3.
 4. A native speaker on the board approves the legal sentences in `docs/starter-copy-sv.md` before they replace `/om/`.
