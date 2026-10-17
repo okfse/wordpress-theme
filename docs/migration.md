@@ -2,7 +2,7 @@
 
 The classic theme (`OKFN-WP` 2.0, folder `wordpress-theme-2022-05-10`) is a Bootstrap 4 PHP theme. This block theme replaces the header, footer, and templates. It does not rewrite page HTML. Classic code is tag `classic-2.0.0`.
 
-Install the release file [okfn-chapter.zip](https://github.com/okfse/wordpress-theme/releases/download/v3.1.0/okfn-chapter.zip) from tag `v3.1.0`. That tag is the Sweden theme. Do not install a zip downloaded from the branch menu: GitHub names that archive after the branch, and WordPress will not see it as `okfn-chapter`. Later edits stay on branch `sweden-customizations`. Do not deploy `master`, `sweden/okfn-chapter`, or a fork. Another chapter follows [fork-a-chapter.md](fork-a-chapter.md) and [starter-copy.md](starter-copy.md).
+Install the release file [okfn-chapter.zip](https://github.com/okfse/wordpress-theme/releases/download/v3.1.3/okfn-chapter.zip) from tag `v3.1.3`. That tag is the Sweden theme. Do not install a zip downloaded from the branch menu: GitHub names that archive after the branch, and WordPress will not see it as `okfn-chapter`. Later edits stay on branch `sweden-customizations`. Do not deploy `master`, `sweden/okfn-chapter`, or a fork. Another chapter follows [fork-a-chapter.md](fork-a-chapter.md) and [starter-copy.md](starter-copy.md).
 
 Inventory of the live site on 16 October 2026:
 

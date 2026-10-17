@@ -1,6 +1,6 @@
 # OK Network Chapter — roadmap
 
-Version on this branch: **3.1.0**. Items under “Shipped” are in the code. They are not an accessibility audit, a performance score, or a finished Sweden launch.
+Version on this branch: **3.1.3**. The patch number counts fixes after 3.1.0: logo shape, mobile menu, and front-page type. Items under “Shipped” are in the code. They are not an accessibility audit, a performance score, or a finished Sweden launch.
 
 The shared line is `v3/theme-improvements`. Open Knowledge Sweden tracks it from `sweden-customizations` in this same repository. Do not fork a second theme repo. See [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
 

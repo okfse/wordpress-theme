@@ -3,14 +3,26 @@
  */
 
 .okfn-header {
-	padding-block: 1.25rem 2rem;
+	padding-block: 0.75rem 1rem;
 	position: relative;
 	z-index: 100;
 }
 
+.okfn-header .wp-block-site-logo {
+	flex: 0 1 auto;
+	min-width: 0;
+	max-width: min(12.5rem, 40vw);
+	line-height: 0;
+}
+
+.okfn-header .wp-block-site-logo a {
+	display: block;
+}
+
 .okfn-header .wp-block-site-logo img {
-	height: 4.375rem;
-	width: auto;
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .okfn-header .wp-block-site-title.screen-reader-text,
@@ -28,11 +40,11 @@
 
 @media (min-width: 782px) {
 	.okfn-header {
-		padding-block: 2rem 3rem;
+		padding-block: 1.25rem 1.5rem;
 	}
 
-	.okfn-header .wp-block-site-logo img {
-		height: 5.625rem;
+	.okfn-header .wp-block-site-logo {
+		max-width: 15rem;
 	}
 }
 
@@ -42,28 +54,62 @@
 
 .okfn-header .wp-block-navigation .wp-block-navigation-item__content {
 	border-radius: var(--okfn-radius-pill);
-	padding: 0.75rem 1.5rem;
-	min-height: 4.375rem;
+	padding: 0.5rem 0.9rem;
+	min-height: 2.75rem;
 	display: flex;
 	align-items: center;
 }
 
-.okfn-header .wp-block-navigation .wp-block-navigation-submenu {
-	border: 2px solid var(--wp--preset--color--okfn-blue);
-	border-radius: var(--okfn-radius-submenu);
-	background: color-mix(in srgb, var(--wp--preset--color--base) 90%, transparent);
-	padding: 1.25rem 3.5rem;
+.okfn-header .wp-block-navigation__responsive-container-open,
+.okfn-header .wp-block-navigation__responsive-container-close {
+	min-width: 2.75rem;
+	min-height: 2.75rem;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (min-width: 1101px) {
+	.okfn-header .wp-block-navigation__submenu-container {
+		border: 2px solid var(--wp--preset--color--okfn-blue);
+		border-radius: 1.25rem;
+		background: color-mix(in srgb, var(--wp--preset--color--base) 96%, transparent);
+		padding: 0.5rem;
+	}
+}
+
+/*
+ * Core shows the inline menu from 600px. These pills need about 1000px
+ * beside the logo, so phones and tablets keep the overlay until then.
+ */
+@media (max-width: 1100px) {
+	.okfn-header .wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: flex;
+	}
+
+	.okfn-header .wp-block-navigation__responsive-container:not(.is-menu-open) {
+		display: none;
+		position: fixed;
+	}
 }
 
 .okfn-header .wp-block-navigation__responsive-container.is-menu-open {
 	background: var(--wp--preset--color--okfn-green);
-	padding: 3rem 2rem;
+	padding: 4.5rem 1.25rem 1.5rem;
 }
 
 .okfn-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
-	font-size: 1.5rem;
-	min-height: auto;
+	font-size: 1.125rem;
+	min-height: 2.75rem;
+	padding: 0.35rem 0;
 	justify-content: flex-start;
+}
+
+.okfn-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container {
+	padding: 0 0 0.25rem 0.75rem;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	min-width: 0;
 }
 
 .okfn-lang-switcher {
@@ -133,6 +179,44 @@
 	padding-block-end: var(--wp--preset--spacing--70);
 }
 
+@media (max-width: 781px) {
+	.okfn-main {
+		overflow-x: clip;
+	}
+
+	.okfn-main .has-okfn-lg-font-size {
+		font-size: 1.375rem !important;
+		line-height: 1.35;
+	}
+
+	.okfn-main p,
+	.okfn-main li {
+		font-size: 1.1875rem;
+		line-height: 1.5;
+	}
+
+	.okfn-main .wp-block-post-template.is-layout-grid {
+		grid-template-columns: 1fr !important;
+	}
+
+	.okfn-hero .wp-block-image img {
+		width: 8rem;
+		max-width: 40vw;
+		height: auto;
+	}
+
+	.has-bg-circle.orb-lg::before,
+	.is-style-orb-blue.orb-lg::before {
+		width: min(20rem, 90vw);
+		height: min(20rem, 90vw);
+	}
+
+	.wp-block-button__link {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
 .okfn-hero {
 	align-items: center;
 }
@@ -164,6 +248,17 @@
 	position: absolute;
 	left: 2rem;
 	bottom: 2rem;
+}
+
+@media (max-width: 781px) {
+	.okfn-feature-card {
+		padding: 1.5rem 1.25rem 4.25rem;
+	}
+
+	.okfn-feature-card .link-arrow-curved {
+		left: 1.25rem;
+		bottom: 1.25rem;
+	}
 }
 
 .okfn-person-card {
