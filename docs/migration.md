@@ -2,7 +2,7 @@
 
 The classic theme (`OKFN-WP` 2.0, folder `wordpress-theme-2022-05-10`) is a Bootstrap 4 PHP theme. This block theme replaces the header, footer, and templates. It does not rewrite page HTML. Classic code is tag `classic-2.0.0`.
 
-Install the release file [okfn-chapter.zip](https://github.com/okfse/wordpress-theme/releases/download/v3.1.3/okfn-chapter.zip) from tag `v3.1.3`. That tag is the Sweden theme. Do not install a zip downloaded from the branch menu: GitHub names that archive after the branch, and WordPress will not see it as `okfn-chapter`. Later edits stay on branch `sweden-customizations`. Do not deploy `master`, `sweden/okfn-chapter`, or a fork. Another chapter follows [fork-a-chapter.md](fork-a-chapter.md) and [starter-copy.md](starter-copy.md).
+Install the release file [okfn-chapter.zip](https://github.com/okfse/wordpress-theme/releases/download/v3.2.0/okfn-chapter.zip) from tag `v3.2.0`. That tag is the Sweden theme. Tag `v3.2.0-network` is the shared chapter theme, without the Sweden header and URLs. Do not install a zip downloaded from the branch menu: GitHub names that archive after the branch, and WordPress will not see it as `okfn-chapter`. Later edits stay on branch `sweden-customizations`. Do not deploy `master`, `sweden/okfn-chapter`, or a fork. Another chapter follows [fork-a-chapter.md](fork-a-chapter.md) and [starter-copy.md](starter-copy.md).
 
 Inventory of the live site on 16 October 2026:
 
@@ -13,7 +13,7 @@ Inventory of the live site on 16 October 2026:
 - English is a page tree under `/en/` (About, Board, Donate, Projects, Publications, Organization), not Polylang.
 - Plugins on the REST index: Jetpack, Jetpack Boost, Two Factor, Limit Login Attempts Reloaded.
 
-`templates/front-page.html` does not print the page body. Activating the theme replaces Hem with the hero, feature cards, latest posts, topic cards, newsletter, and closing band. Other pages use `page.html`, which prints the title and the existing content. Posts use `single.html` and keep their permalinks.
+`templates/front-page.html` does not print the page body. Activating the theme replaces Hem with the hero, the Happening now covers, feature cards, latest posts, topic cards, newsletter, and closing band. If the front page was already saved in the Site Editor, insert the Happening now pattern under the hero. Other pages use `page.html`, which prints the title and the existing content. Posts use `single.html` and keep their permalinks.
 
 ## Staging
 
