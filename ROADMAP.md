@@ -1,6 +1,6 @@
 # OK Network Chapter — roadmap
 
-Version on this branch: **3.2.0**, tag `v3.2.0-network`. The Sweden install zip is tag `v3.2.0` on `sweden-customizations`. Items under “Shipped” are in the code. They are not an accessibility audit, a performance score, or a finished Sweden launch.
+Version on this branch: **3.2.1**, tag `v3.2.1-network`. The Sweden install zip is tag `v3.2.0` on `sweden-customizations`. Items under “Shipped” are in the code. They are not an accessibility audit, a performance score, or a finished Sweden launch.
 
 The shared line is `v3/theme-improvements`. Open Knowledge Sweden tracks it from `sweden-customizations` in this same repository. Do not fork a second theme repo. See [docs/fork-a-chapter.md](docs/fork-a-chapter.md).
 
@@ -22,6 +22,11 @@ The Sweden layer (OKSE logos, Swedish header, Sweden URLs, `docs/starter-copy-sv
 ## Shipped in 3.2.0
 
 - Happening now: cover photos on the front page, under the hero. Each card is one link to a project or event. Editors replace the image, the caption, the alt text, and the link. Sweden keeps its own URLs on `sweden-customizations`.
+
+## Shipped in 3.2.1
+
+- Mobile header, menu, and front-page type on this shared branch. The logo scales with the viewport, the menu is a hamburger through 1100px, and the front page under 782px uses the smaller type and a one-column post grid.
+- Swedish catalog for this branch. Pattern strings, including the hero, feature cards, topic cards, and newsletter, have `sv_SE` translations. Header labels in `parts/header.html` stay the generic English starter.
 
 ## Now, before the okfn.se cutover
 

@@ -20,10 +20,17 @@ jobs:
         run: |
           git archive --format=zip --prefix=okfn-chapter/ -o okfn-chapter.zip HEAD
 
+      - name: Write release text from the annotated tag
+        run: |
+          git fetch --force origin "refs/tags/${GITHUB_REF_NAME}:refs/tags/${GITHUB_REF_NAME}"
+          git tag -l --format='%(contents)' "${GITHUB_REF_NAME}" > release-notes.txt
+          test -s release-notes.txt
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: okfn-chapter.zip
+          body_path: release-notes.txt
           generate_release_notes: true
           draft: false
           prerelease: false

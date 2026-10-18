@@ -2,7 +2,7 @@
 
 WordPress **7.0+** block theme for Open Knowledge Network chapters. It ports the [okfn.org](https://okfn.org/) visual identity (palette, HK Grotesk, pill buttons, colour orbs) into core Site Editor and block patterns. No Astra, Spectra, Elementor, or other page-builder plugin is required.
 
-Version **3.2.0**. Happening now adds cover photos under the hero. Each card links to a project or an event. The Sweden build is tag `v3.2.0` on `sweden-customizations`. This branch is tag `v3.2.0-network`. Version 3.0.0 replaced the deprecated classic `OKFN-WP` 2.0 theme (Bootstrap 4, jQuery, mmenu, Grunt). The classic tree is tagged `classic-2.0.0`.
+Version **3.2.1**. Happening now adds cover photos under the hero. Each card links to a project or an event. This shared build also includes the mobile logo, the hamburger menu through 1100px, the narrow front-page type, and a filled Swedish catalog. The Sweden build for okfn.se is tag `v3.2.0` on `sweden-customizations`. This branch is tag `v3.2.1-network`. Version 3.0.0 replaced the deprecated classic `OKFN-WP` 2.0 theme (Bootstrap 4, jQuery, mmenu, Grunt). The classic tree is tagged `classic-2.0.0`.
 
 First intended deployment: [okfn.se](https://okfn.se/). Other chapters can reuse the theme by swapping the Site Logo and, optionally, the **Chapter green** style variation.
 
